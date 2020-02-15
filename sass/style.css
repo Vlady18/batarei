@@ -16,6 +16,7 @@
 }
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 ul {
@@ -39,6 +40,57 @@ body, p {
   margin: 0 auto;
 }
 
+#partners {
+  padding: 100px 0px 125px 0px;
+  background: url("../img/bath.jpg") no-repeat center/cover;
+}
+#partners .container {
+  display: flex;
+  justify-content: flex-end;
+}
+#partners .partner_block {
+  padding: 30px 55px 28px 55px;
+  max-width: 555px;
+  background: #3a6f88;
+}
+#partners .partner_block .h5 {
+  color: #ffffff;
+  font-family: "Muller Extra Bold";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 225px;
+}
+#partners .partner_block p {
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 450px;
+}
+#partners .partner_block a {
+  display: inline-block;
+  width: 177px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  padding: 12px 0px;
+  text-align: center;
+  background: #3c8a08;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+#whyWe {
+  padding: 75px 0px;
+}
 #whyWe .h3 {
   color: #202124;
   font-family: "Muller Extra Bold";
@@ -46,18 +98,99 @@ body, p {
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 #whyWe .h6 {
   color: #202124;
+  margin-top: 25px;
+  margin-bottom: 45px;
   font-family: "Muller Bold";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
 }
 #whyWe .advantages_wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+#whyWe .advantages_wrap .advantages_item {
+  display: flex;
+}
+#whyWe .advantages_wrap .advantages_item .adv_info {
+  max-width: 210px;
+  margin-left: 25px;
+}
+#whyWe .advantages_wrap .advantages_item .adv_info-head {
+  color: #202124;
+  font-family: "Muller Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+#whyWe .advantages_wrap .advantages_item .adv_info-body {
+  color: #202124;
+  font-family: "Muller Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+#whyWe .why_form {
+  margin-top: 75px;
+  padding: 45px 60px 65px 60px;
+  background: url(../img/why.jpg) no-repeat 0% 0%/cover;
+}
+#whyWe .why_form .h5 {
+  color: #202124;
+  font-family: "Muller Extra Bold";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  max-width: 480px;
+}
+#whyWe .why_form p {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 355px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+#whyWe .why_form .field_group {
+  display: flex;
+  align-items: center;
+}
+#whyWe .why_form .field_group input {
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.09);
+  border: 1px solid #b2b2b2;
+  background-color: #ffffff;
+  width: 315px;
+  color: #5a5b5d;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  height: 38px;
+  margin-right: 20px;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+#whyWe .why_form .field_group button {
+  background: #3c8a08;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #3c8a08;
+  text-align: center;
+  height: 38px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 #map {
@@ -65,6 +198,8 @@ body, p {
 }
 #map img {
   display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 footer .foot_feedback {
@@ -170,6 +305,131 @@ footer .foot_menu_nav ul li.dev a span {
   display: inline-block;
   text-align: right;
   margin-right: 10px;
+}
+
+@media all and (max-width: 992px) {
+  footer .foot_menu_nav ul li {
+    display: none;
+  }
+
+  footer .foot_menu_nav ul li.dev {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer .foot_feedback .container {
+    flex-direction: column;
+  }
+
+  footer .foot_feedback .feedback-company {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #whyWe .why_form .field_group input {
+    width: 220px;
+    margin-right: 10px;
+  }
+
+  #whyWe .why_form {
+    padding: 45px 20px 65px 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  #partners .container {
+    justify-content: center;
+  }
+
+  #whyWe .advantages_wrap {
+    flex-direction: column;
+  }
+
+  #whyWe .advantages_wrap .advantages_item .adv_info {
+    max-width: 100%;
+  }
+
+  #whyWe .advantages_wrap .advantages_item .adv_info-head {
+    margin-bottom: 10px;
+  }
+
+  #whyWe .advantages_wrap .advantages_item {
+    margin-bottom: 15px;
+  }
+
+  #whyWe .advantages_wrap .advantages_item .adv_img {
+    min-width: 62px;
+  }
+
+  #whyWe .advantages_wrap .advantages_item .adv_img img {
+    max-width: none;
+  }
+
+  #whyWe .why_form {
+    background: #3a6f88;
+  }
+
+  #whyWe .why_form .h5 {
+    max-width: 100%;
+  }
+
+  #whyWe .why_form p {
+    max-width: 100%;
+  }
+
+  #whyWe .why_form .field_group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #whyWe .why_form .field_group input {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  footer .foot_feedback .feedback_contacts {
+    flex-wrap: wrap;
+  }
+
+  footer .foot_feedback .feedback_contacts .contact_item {
+    width: 50%;
+  }
+}
+@media all and (max-width: 576px) {
+  #partners .partner_block a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #partners .partner_block .h5 {
+    max-width: auto;
+  }
+
+  #partners .partner_block {
+    padding: 30px 30px 28px 30px;
+  }
+
+  #whyWe .h3 {
+    font-size: 34px;
+  }
+
+  footer .foot_feedback .feedback_contacts .contact_item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #whyWe .why_form .field_group input {
+    width: 100%;
+  }
+
+  #whyWe .why_form .field_group button {
+    width: 100%;
+  }
+
+  #whyWe .why_form .h5 {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
