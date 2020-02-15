@@ -1,10 +1,175 @@
+@font-face {
+  font-family: "Muller Regular";
+  src: url("../fonts/MullerRegular.eot") format("eot"), url("../fonts/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muller Medium";
+  src: url("../fonts/MullerMedium.eot") format("eot"), url("../fonts/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muller Extra Bold";
+  src: url("../fonts/MullerExtraBold.eot") format("eot"), url("../fonts/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muller Bold";
+  src: url("../fonts/MullerBold.eot") format("eot"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 body, p {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+#whyWe .h3 {
+  color: #202124;
+  font-family: "Muller Extra Bold";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+#whyWe .h6 {
+  color: #202124;
+  font-family: "Muller Bold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#whyWe .advantages_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#map {
+  overflow-x: hidden;
+}
+#map img {
+  display: block;
+}
+
+footer .foot_feedback {
+  background: #3a6f88;
+  padding: 38px 0px 38px 0px;
+}
+footer .foot_feedback .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot_feedback .feedback-company {
+  max-width: 230px;
+}
+footer .foot_feedback .feedback-company p.pol {
+  margin: 20px 0px;
+}
+footer .foot_feedback .feedback-company p {
+  color: #84d5fb;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+footer .foot_feedback .feedback-company p span {
+  display: block;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+footer .foot_feedback .feedback_contacts {
+  background: #244455;
+  padding: 30px;
+  display: flex;
+  max-width: 937px;
+}
+footer .foot_feedback .feedback_contacts .vk_item {
+  display: flex;
+  align-items: center;
+}
+footer .foot_feedback .feedback_contacts .vk_item span {
+  display: inline-block;
+  margin-right: 20px;
+  color: #ffffff;
+  font-family: "Muller Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+footer .foot_feedback .feedback_contacts .contact_item {
+  width: 25%;
+}
+footer .foot_feedback .feedback_contacts .contact_item .contact_head-it {
+  color: #70c5ec;
+  font-family: "Muller Extra Bold";
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+footer .foot_feedback .feedback_contacts .contact_item p {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer .foot_feedback .feedback_contacts .contact_item p.address {
+  line-height: 18px;
+}
+footer .foot_feedback .feedback_contacts .contact_item a {
+  display: block;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+footer .foot_menu {
+  background: #d8d8d8;
+  padding: 30px 0px 40px 0px;
+}
+footer .foot_menu_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .foot_menu_nav ul a {
+  text-decoration: none;
+  color: #244455;
+  font-family: "Muller Extra Bold";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+footer .foot_menu_nav ul li.dev a {
+  display: flex;
+  align-items: center;
+}
+footer .foot_menu_nav ul li.dev a span {
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
