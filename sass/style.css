@@ -54,10 +54,111 @@ body, p {
   line-height: 40px;
 }
 
+#district .acard_ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+#district .acard_ul li {
+  display: block;
+  cursor: pointer;
+  margin-right: 1px;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  padding: 15px 18px;
+  background: #3a6f88;
+  width: 244px;
+}
+#district .acard_ul li.active {
+  background: #3c8a08;
+}
+#district .acard_ul li.akcia {
+  background: #ff0060;
+  text-transform: uppercase;
+  font-family: "Muller Extra Bold";
+}
+#district .district_bg {
+  background: #c2d6e0;
+  padding: 20px 0px 25px 0px;
+}
+#district .district_bg .offer_dist {
+  display: flex;
+  justify-content: space-between;
+}
+#district .district_bg .offer_dist .list_distr .distr_ban {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  background: #3c8a08;
+  padding: 15px 10px 20px 15px;
+}
+#district .district_bg .offer_dist .list_distr .distr_ban .time_ban {
+  margin-right: 15px;
+}
+#district .district_bg .offer_dist .list_distr .distr_ban p.ban-aft {
+  margin-right: 40px;
+  position: relative;
+}
+#district .district_bg .offer_dist .list_distr .distr_ban p.ban-aft:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 32px;
+  background-color: #c2d6e0;
+}
+#district .district_bg .offer_dist .list_distr .distr_ban p {
+  color: #ffffff;
+  font-family: "Muller Extra Bold";
+  font-size: 22px;
+}
+#district .district_bg .offer_dist .list_distr .distr_ban p strong {
+  color: #ffffff;
+  font-family: "Muller Extra Bold";
+  font-size: 39px;
+  text-transform: uppercase;
+}
+#district .district_bg .offer_dist .list_distr .offer_distr {
+  display: flex;
+}
+#district .district_bg .offer_dist .list_distr .offer_distr .point_distr-l {
+  margin-right: 40px;
+}
+#district .district_bg .offer_dist .list_distr .offer_distr li {
+  margin-bottom: 13px;
+  color: #3a6f88;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  font-weight: 400;
+}
+#district .district_bg .offer_dist .list_distr .offer_distr li span {
+  font-family: "Muller Extra Bold";
+  text-transform: uppercase;
+}
+#district .district_bg .offer_dist .list_distr .h5 {
+  color: #3a6f88;
+  font-family: "Muller Extra Bold";
+  font-size: 23px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
 #our_works {
   padding-top: 65px;
   padding-bottom: 65px;
   overflow-x: hidden;
+}
+#our_works .h4 {
+  color: #3a6f88;
+  font-family: "Muller Extra Bold";
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 36px;
+  text-transform: uppercase;
 }
 #our_works .container {
   position: relative;
@@ -450,6 +551,15 @@ footer .foot_menu_nav ul li.dev a span {
   margin-right: 10px;
 }
 
+@media all and (max-width: 1165px) {
+  #sertific .sertific_wrap {
+    flex-wrap: wrap;
+  }
+
+  #sertific .sertific_wrap .sertific_item {
+    margin-bottom: 25px;
+  }
+}
 @media all and (max-width: 992px) {
   footer .foot_menu_nav ul li {
     display: none;
@@ -480,6 +590,14 @@ footer .foot_menu_nav ul li.dev a span {
   }
 }
 @media all and (max-width: 768px) {
+  #sertific .sertific_wrap .sertific_item.sm {
+    max-width: 100%;
+  }
+
+  #sertific .sertific_wrap .sertific_item {
+    max-width: 100%;
+  }
+
   #partners .container {
     justify-content: center;
   }
@@ -539,6 +657,32 @@ footer .foot_menu_nav ul li.dev a span {
   }
 }
 @media all and (max-width: 576px) {
+  .slick-dots li {
+    background: #d7e0e4;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    background: #000;
+  }
+
+  #our_works .container .prev, #our_works .container .next {
+    display: none;
+  }
+
+  #our_works .work_wrap {
+    padding: 0;
+  }
+
+  #our_works .h4 {
+    font-size: 32px;
+  }
+
+  #sertific .sertific_wrap .sertific_item .h4 {
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+
   #partners .partner_block a {
     display: block;
     margin: 0 auto;
