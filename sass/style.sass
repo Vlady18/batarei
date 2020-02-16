@@ -58,11 +58,96 @@ body, p
   text-align: center
   line-height: 40px
 
-
+#district
+  .acard_ul
+    display: flex
+    width: 100%
+    justify-content: flex-start
+    li
+      display: block
+      cursor: pointer
+      margin-right: 1px
+      color: #ffffff
+      font-family: "Muller Regular"
+      font-size: 16px
+      padding: 15px 18px
+      background: #3a6f88
+      width: 244px
+    li.active
+      background: #3c8a08
+    li.akcia
+      background: #ff0060
+      text-transform: uppercase
+      font-family: "Muller Extra Bold"
+  .district_bg
+    background: #c2d6e0
+    padding: 20px 0px 25px 0px
+    .offer_dist
+      display: flex
+      justify-content: space-between
+      .list_distr
+        .distr_ban
+          margin-top: 30px
+          display: flex
+          align-items: center
+          //justify-content: space-between
+          background: #3c8a08
+          padding: 15px 10px 20px 15px
+          .time_ban
+            margin-right: 15px
+          p.ban-aft
+            margin-right: 40px
+            position: relative
+            &:after
+              content: ''
+              display: inline-block
+              position: absolute
+              right: -20px
+              top: 50%
+              transform: translateY(-50%)
+              width: 5px
+              height: 32px
+              background-color: #c2d6e0
+          p
+            color: #ffffff
+            font-family: "Muller Extra Bold"
+            font-size: 22px
+            strong
+              color: #ffffff
+              font-family: "Muller Extra Bold"
+              font-size: 39px
+              text-transform: uppercase
+        .offer_distr
+          display: flex
+          //justify-content: space-between
+          .point_distr-l
+            margin-right: 40px
+          li
+            margin-bottom: 13px
+            color: #3a6f88
+            font-family: "Muller Regular"
+            font-size: 16px
+            font-weight: 400
+            span
+              font-family: "Muller Extra Bold"
+              text-transform: uppercase
+        .h5
+          color: #3a6f88
+          font-family: "Muller Extra Bold"
+          font-size: 23px
+          margin-bottom: 25px
+          text-transform: uppercase
 #our_works
   padding-top: 65px
   padding-bottom: 65px
   overflow-x: hidden
+  .h4
+    color: #3a6f88
+    font-family: "Muller Extra Bold"
+    text-align: center
+    margin-bottom: 35px
+    font-size: 36px
+    text-transform: uppercase
   .container
     position: relative
     .next
@@ -397,7 +482,11 @@ footer
             text-align: right
             margin-right: 10px
 
-
+@media all and (max-width: 1165px)
+  #sertific .sertific_wrap
+    flex-wrap: wrap
+  #sertific .sertific_wrap .sertific_item
+    margin-bottom: 25px
 
 header
   position: fixed
@@ -935,6 +1024,10 @@ header
   .we-offer .container .we-offer-right-item
     width: calc(100% - 20px)
 @media all and (max-width: 768px)
+  #sertific .sertific_wrap .sertific_item.sm
+    max-width: 100%
+  #sertific .sertific_wrap .sertific_item
+    max-width: 100%
   .actions-slider .container .actions-slider-wrapper .actions-slider-item
     display: flex
     justify-content: center
@@ -988,6 +1081,20 @@ header
   header .container .info-wrapper .info-item
     display: none
 @media all and (max-width: 576px)
+  .slick-dots li
+    background: #d7e0e4
+    border-radius: 50%
+  .slick-dots li.slick-active
+    background: #000
+  #our_works .container .prev, #our_works .container .next
+    display: none
+  #our_works .work_wrap
+    padding: 0
+  #our_works .h4
+    font-size: 32px
+  #sertific .sertific_wrap .sertific_item .h4
+    margin-bottom: 10px
+    font-size: 35px
   #partners .partner_block a
     display: block
     margin: 0 auto

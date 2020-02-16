@@ -1,9 +1,9 @@
 $(function(){
-    // $('.actions-slider-wrapper').slick({
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    // });
+    $('.actions-slider-wrapper').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 
 
     $('.photo_sertificate').slick({
@@ -44,6 +44,7 @@ $(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
+                    arrows: false,
                     dots: true,
                 }
             },
