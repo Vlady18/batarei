@@ -40,6 +40,106 @@ body, p {
   margin: 0 auto;
 }
 
+.button {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 40px;
+  border-radius: 20px;
+  background: #3c8a08;
+  text-align: center;
+  line-height: 40px;
+}
+
+#our_works {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+#our_works .work_wrap {
+  padding: 0px 70px;
+}
+#our_works .work_wrap .work_item {
+  padding-bottom: 20px;
+}
+#our_works .work_wrap .work_item img {
+  display: block;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #b2b2b2;
+  box-shadow: -1px 20px 16px -9px rgba(0, 0, 0, 0.29);
+}
+
+#sertific {
+  background: #d7e0e4;
+  padding: 50px 0px 55px 0px;
+}
+#sertific .sertific_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#sertific .sertific_wrap .sertific_item.sm {
+  max-width: 360px;
+}
+#sertific .sertific_wrap .sertific_item.sm .h4 {
+  color: #3a6f88;
+}
+#sertific .sertific_wrap .photo_sertificate.sertific_item {
+  max-width: 290px;
+  position: relative;
+}
+#sertific .sertific_wrap .photo_sertificate.sertific_item .photo_srtif {
+  position: relative;
+}
+#sertific .sertific_wrap .photo_sertificate.sertific_item .prev, #sertific .sertific_wrap .photo_sertificate.sertific_item .next {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background: #000000;
+  text-align: center;
+}
+#sertific .sertific_wrap .photo_sertificate.sertific_item .next {
+  right: 0px;
+}
+#sertific .sertific_wrap .photo_sertificate.sertific_item .prev {
+  right: 50px;
+}
+#sertific .sertific_wrap .sertific_item {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#sertific .sertific_wrap .sertific_item img {
+  margin: 0 auto;
+  display: block;
+}
+#sertific .sertific_wrap .sertific_item .h4 {
+  color: #202124;
+  font-family: "Muller Extra Bold";
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+#sertific .sertific_wrap .sertific_item p {
+  margin-bottom: 10px;
+  color: #202124;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  line-height: 24px;
+}
+#sertific .sertific_wrap .sertific_item a.button {
+  width: 175px;
+}
+
 #partners {
   padding: 100px 0px 125px 0px;
   background: url("../img/bath.jpg") no-repeat center/cover;
@@ -85,6 +185,29 @@ body, p {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  text-transform: uppercase;
+}
+
+#whyWe .main_info-why .main_why-item {
+  margin-bottom: 45px;
+}
+#whyWe .main_info-why .main_why-item p {
+  color: #333333;
+  font-family: "Muller Regular";
+  font-size: 14px;
+}
+#whyWe .main_info-why .main_why-item h2 {
+  color: #3c8a08;
+  font-family: "Muller Extra Bold";
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+#whyWe .main_info-why .main_why-item h3 {
+  color: #3a6f88;
+  font-family: "Muller Extra Bold";
+  font-size: 18px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
