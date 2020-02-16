@@ -12,6 +12,23 @@
   src: url('../fonts/MullerBold.eot') format('eot'), url('../fonts/MullerBold.woff') format('woff'), url('../fonts/MullerBold.ttf') format('truetype')
 
 
+.dpn
+  display: none
+.sim
+  background-color: #3a6f88
+  .services-item-visible
+    &-name
+      img
+        display: none
+      .alt-image
+        display: block
+      p
+        color: white
+    &-butt
+      display: none
+.alt-image
+  display: none
+
 *
   box-sizing: border-box
   outline: none
@@ -176,6 +193,7 @@ body, p
     .main_why-item
       margin-bottom: 45px
       p
+        color: #333333
         color: #333333
         font-family: "Muller Regular"
         font-size: 14px
@@ -452,14 +470,32 @@ header
         border: none
         border-radius: 20px
 
+
 .services
   margin-top: 100px
   background-color: #d1d3d4
-  padding: 18px 0 80px 0
+  padding: 0 0 80px 0
   .container
     display: flex
     .services-item
+      padding-top: 18px
       width: 25%
+      position: relative
+      &-hidden
+        color: #ffffff
+        font-family: "Muller Regular"
+        font-size: 18px
+        line-height: 30px
+        text-decoration: underline
+        background-color: #3a6f88
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        padding: 35px
+        a
+          text-decoration: none
+          color: #ffffff
       &-visible
         cursor: pointer
         border-right: 1px solid #202124

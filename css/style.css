@@ -10,6 +10,23 @@
 @font-face {
   font-family: "Muller Bold";
   src: url("../fonts/MullerBold.eot") format("eot"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype"); }
+.dpn {
+  display: none; }
+
+.sim {
+  background-color: #3a6f88; }
+  .sim .services-item-visible-name img {
+    display: none; }
+  .sim .services-item-visible-name .alt-image {
+    display: block; }
+  .sim .services-item-visible-name p {
+    color: white; }
+  .sim .services-item-visible-butt {
+    display: none; }
+
+.alt-image {
+  display: none; }
+
 * {
   box-sizing: border-box;
   outline: none; }
@@ -45,7 +62,6 @@ body, p {
   line-height: 40px; }
 
 #our_works {
-  display: none;
   padding-top: 65px;
   padding-bottom: 65px;
   overflow-x: hidden; }
@@ -78,7 +94,6 @@ body, p {
         box-shadow: -1px 20px 16px -17px rgba(0, 0, 0, 0.29); }
 
 #sertific {
-  display: none;
   background: #d7e0e4;
   padding: 50px 0px 55px 0px; }
   #sertific .sertific_wrap {
@@ -132,7 +147,6 @@ body, p {
         width: 175px; }
 
 #partners {
-  display: none;
   padding: 100px 0px 125px 0px;
   background: url("../img/bath.jpg") no-repeat center/cover; }
   #partners .container {
@@ -174,26 +188,25 @@ body, p {
       line-height: 18px;
       text-transform: uppercase; }
 
-#whyWe {
-  display: none; }
-  #whyWe .main_info-why .main_why-item {
-    margin-bottom: 45px; }
-    #whyWe .main_info-why .main_why-item p {
-      color: #333333;
-      font-family: "Muller Regular";
-      font-size: 14px; }
-    #whyWe .main_info-why .main_why-item h2 {
-      color: #3c8a08;
-      font-family: "Muller Extra Bold";
-      font-size: 24px;
-      margin-bottom: 30px;
-      text-transform: uppercase; }
-    #whyWe .main_info-why .main_why-item h3 {
-      color: #3a6f88;
-      font-family: "Muller Extra Bold";
-      font-size: 18px;
-      margin-bottom: 20px;
-      text-transform: uppercase; }
+#whyWe .main_info-why .main_why-item {
+  margin-bottom: 45px; }
+  #whyWe .main_info-why .main_why-item p {
+    color: #333333;
+    color: #333333;
+    font-family: "Muller Regular";
+    font-size: 14px; }
+  #whyWe .main_info-why .main_why-item h2 {
+    color: #3c8a08;
+    font-family: "Muller Extra Bold";
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+  #whyWe .main_info-why .main_why-item h3 {
+    color: #3a6f88;
+    font-family: "Muller Extra Bold";
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
 
 #whyWe {
   padding: 75px 0; }
@@ -287,101 +300,97 @@ body, p {
         cursor: pointer; }
 
 #map {
-  display: none;
   overflow-x: hidden; }
   #map img {
     display: block;
     margin: 0 auto;
     width: 100%; }
 
-footer {
-  display: none; }
-  footer .foot_feedback {
-    background: #3a6f88;
-    padding: 38px 0px 38px 0px; }
-    footer .foot_feedback .container {
-      display: flex;
-      justify-content: space-between; }
-    footer .foot_feedback .feedback-company {
-      max-width: 230px; }
-      footer .foot_feedback .feedback-company p.pol {
-        margin: 20px 0px; }
-      footer .foot_feedback .feedback-company p {
-        color: #84d5fb;
+footer .foot_feedback {
+  background: #3a6f88;
+  padding: 38px 0px 38px 0px; }
+  footer .foot_feedback .container {
+    display: flex;
+    justify-content: space-between; }
+  footer .foot_feedback .feedback-company {
+    max-width: 230px; }
+    footer .foot_feedback .feedback-company p.pol {
+      margin: 20px 0px; }
+    footer .foot_feedback .feedback-company p {
+      color: #84d5fb;
+      font-family: "Muller Regular";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px; }
+      footer .foot_feedback .feedback-company p span {
+        display: block;
+        color: #ffffff;
         font-family: "Muller Regular";
         font-size: 12px;
         font-weight: 400;
         line-height: 14px; }
-        footer .foot_feedback .feedback-company p span {
-          display: block;
-          color: #ffffff;
-          font-family: "Muller Regular";
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 14px; }
-    footer .foot_feedback .feedback_contacts {
-      background: #244455;
-      padding: 30px;
+  footer .foot_feedback .feedback_contacts {
+    background: #244455;
+    padding: 30px;
+    display: flex;
+    max-width: 937px; }
+    footer .foot_feedback .feedback_contacts .vk_item {
       display: flex;
-      max-width: 937px; }
-      footer .foot_feedback .feedback_contacts .vk_item {
-        display: flex;
-        align-items: center; }
-        footer .foot_feedback .feedback_contacts .vk_item span {
-          display: inline-block;
-          margin-right: 20px;
-          color: #ffffff;
-          font-family: "Muller Extra Bold";
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 30px;
-          text-transform: uppercase; }
-      footer .foot_feedback .feedback_contacts .contact_item {
-        width: 25%; }
-        footer .foot_feedback .feedback_contacts .contact_item .contact_head-it {
-          color: #70c5ec;
-          font-family: "Muller Extra Bold";
-          font-size: 15px;
-          font-weight: 400;
-          margin-bottom: 15px; }
-        footer .foot_feedback .feedback_contacts .contact_item p {
-          color: #ffffff;
-          font-family: "Muller Regular";
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 24px; }
-        footer .foot_feedback .feedback_contacts .contact_item p.address {
-          line-height: 18px; }
-        footer .foot_feedback .feedback_contacts .contact_item a {
-          display: block;
-          color: #ffffff;
-          font-family: "Muller Regular";
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 24px;
-          text-decoration: none; }
-  footer .foot_menu {
-    display: none;
-    background: #d8d8d8;
-    padding: 30px 0px 40px 0px; }
-    footer .foot_menu_nav ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      footer .foot_menu_nav ul a {
-        text-decoration: none;
-        color: #244455;
+      align-items: center; }
+      footer .foot_feedback .feedback_contacts .vk_item span {
+        display: inline-block;
+        margin-right: 20px;
+        color: #ffffff;
         font-family: "Muller Extra Bold";
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 1.2px; }
-      footer .foot_menu_nav ul li.dev a {
-        display: flex;
-        align-items: center; }
-        footer .foot_menu_nav ul li.dev a span {
-          display: inline-block;
-          text-align: right;
-          margin-right: 10px; }
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase; }
+    footer .foot_feedback .feedback_contacts .contact_item {
+      width: 25%; }
+      footer .foot_feedback .feedback_contacts .contact_item .contact_head-it {
+        color: #70c5ec;
+        font-family: "Muller Extra Bold";
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 15px; }
+      footer .foot_feedback .feedback_contacts .contact_item p {
+        color: #ffffff;
+        font-family: "Muller Regular";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; }
+      footer .foot_feedback .feedback_contacts .contact_item p.address {
+        line-height: 18px; }
+      footer .foot_feedback .feedback_contacts .contact_item a {
+        display: block;
+        color: #ffffff;
+        font-family: "Muller Regular";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none; }
+footer .foot_menu {
+  background: #d8d8d8;
+  padding: 30px 0px 40px 0px; }
+  footer .foot_menu_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    footer .foot_menu_nav ul a {
+      text-decoration: none;
+      color: #244455;
+      font-family: "Muller Extra Bold";
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px; }
+    footer .foot_menu_nav ul li.dev a {
+      display: flex;
+      align-items: center; }
+      footer .foot_menu_nav ul li.dev a span {
+        display: inline-block;
+        text-align: right;
+        margin-right: 10px; }
 
 header {
   position: fixed;
@@ -453,11 +462,28 @@ header {
 .services {
   margin-top: 100px;
   background-color: #d1d3d4;
-  padding: 18px 0 80px 0; }
+  padding: 0 0 80px 0; }
   .services .container {
     display: flex; }
     .services .container .services-item {
-      width: 25%; }
+      padding-top: 18px;
+      width: 25%;
+      position: relative; }
+      .services .container .services-item-hidden {
+        color: #ffffff;
+        font-family: "Muller Regular";
+        font-size: 18px;
+        line-height: 30px;
+        text-decoration: underline;
+        background-color: #3a6f88;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 35px; }
+        .services .container .services-item-hidden a {
+          text-decoration: none;
+          color: #ffffff; }
       .services .container .services-item-visible {
         cursor: pointer;
         border-right: 1px solid #202124;
@@ -674,34 +700,35 @@ header {
   .who-we .container {
     display: flex;
     justify-content: space-between; }
-    .who-we .container .who-we-right p {
-      font-family: "Muller Extra Bold";
-      font-size: 45px;
-      text-transform: uppercase;
-      margin-bottom: 35px; }
-    .who-we .container .who-we-right span {
-      display: block;
-      font-family: "Muller Regular";
-      font-size: 18px;
-      margin-bottom: 30px;
-      max-width: 575px; }
-    .who-we .container .who-we-right a {
-      text-decoration: none;
-      width: 177px;
-      height: 39px;
-      background-color: #3c8a08;
-      border-radius: 20px;
-      color: #ffffff;
-      font-family: "Muller Regular";
-      font-size: 14px;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 40px; }
+    .who-we .container .who-we-right {
+      margin-left: 20px; }
+      .who-we .container .who-we-right p {
+        font-family: "Muller Extra Bold";
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-bottom: 35px; }
+      .who-we .container .who-we-right span {
+        display: block;
+        font-family: "Muller Regular";
+        font-size: 18px;
+        margin-bottom: 30px;
+        max-width: 575px; }
+      .who-we .container .who-we-right a {
+        text-decoration: none;
+        width: 177px;
+        height: 39px;
+        background-color: #3c8a08;
+        border-radius: 20px;
+        color: #ffffff;
+        font-family: "Muller Regular";
+        font-size: 14px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px; }
 
 .our-serv {
-  display: none;
   padding: 90px 0; }
   .our-serv .container {
     display: flex; }
@@ -776,6 +803,9 @@ header {
   .we-offer .container .we-offer-right-item ul li {
     font-size: 15px; } }
 @media all and (max-width: 1330px) {
+  .our-serv .container .our-serv-right-left ul li {
+    font-size: 15px; }
+
   .we-offer .container .we-offer-left {
     margin-right: 40px; }
 
@@ -803,6 +833,22 @@ header {
     width: fit-content;
     font-size: 16px; } }
 @media all and (max-width: 1215px) {
+  .our-serv .container {
+    flex-direction: column;
+    align-items: center; }
+    .our-serv .container .our-serv-left {
+      text-align: center;
+      width: 100%;
+      margin-right: 0; }
+      .our-serv .container .our-serv-left p {
+        max-width: inherit; }
+      .our-serv .container .our-serv-left span {
+        width: auto;
+        margin-bottom: 10px; }
+      .our-serv .container .our-serv-left .hr-hl {
+        margin: 0 auto;
+        margin-bottom: 20px; }
+
   header .container .logo-wrapper .logo {
     height: auto;
     width: 151px; } }
@@ -816,6 +862,21 @@ header {
   .services .container .services-item-visible-name p {
     font-size: 12px; } }
 @media all and (max-width: 992px) {
+  .who-we .container {
+    flex-direction: column;
+    align-items: center; }
+    .who-we .container .who-we-left {
+      margin-bottom: 10px; }
+
+  .who-we .container .who-we-right {
+    margin-left: 0; }
+    .who-we .container .who-we-right p {
+      text-align: center; }
+    .who-we .container .who-we-right span {
+      max-width: inherit; }
+    .who-we .container .who-we-right a {
+      margin: 0 auto; }
+
   footer .foot_menu_nav ul li {
     display: none; }
 
@@ -838,6 +899,14 @@ header {
   #whyWe .why_form {
     padding: 45px 20px 65px 20px; } }
 @media all and (max-width: 930px) {
+  .our-serv .container .our-serv-right {
+    flex-direction: column; }
+    .our-serv .container .our-serv-right-left {
+      width: 100%; }
+    .our-serv .container .our-serv-right-right {
+      width: 100%;
+      height: 300px; }
+
   .services .container {
     flex-direction: column;
     align-items: center; }
@@ -956,6 +1025,14 @@ header {
   #whyWe .why_form .h5 {
     font-size: 26px;
     line-height: 30px; } }
+@media all and (max-width: 480px) {
+  .our-serv .container .our-serv-right-left {
+    padding: 20px; }
+    .our-serv .container .our-serv-right-left ul li {
+      font-size: 12px;
+      margin-left: 0; }
+      .our-serv .container .our-serv-right-left ul li::after {
+        display: none; } }
 @media all and (max-width: 440px) {
   .we-offer .container .we-offer-left p.h3 {
     font-size: 40px; }

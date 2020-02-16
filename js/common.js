@@ -1,4 +1,11 @@
 $(function(){
+    // $('.actions-slider-wrapper').slick({
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    // });
+
+
     $('.photo_sertificate').slick({
         infinite: true,
         slidesToShow: 1,
@@ -43,3 +50,12 @@ $(function(){
         ]
     });
 });
+
+    $('.services-item').click(function() {
+        const visiblePart = this.children[0];
+        const hiddenPart = this.children[1];
+
+        $(hiddenPart).toggleClass('dpn');
+        $(this).toggleClass('sim');
+
+    });

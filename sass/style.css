@@ -14,6 +14,30 @@
   font-family: "Muller Bold";
   src: url("../fonts/MullerBold.eot") format("eot"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype");
 }
+.dpn {
+  display: none;
+}
+
+.sim {
+  background-color: #3a6f88;
+}
+.sim .services-item-visible-name img {
+  display: none;
+}
+.sim .services-item-visible-name .alt-image {
+  display: block;
+}
+.sim .services-item-visible-name p {
+  color: white;
+}
+.sim .services-item-visible-butt {
+  display: none;
+}
+
+.alt-image {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   outline: none;
@@ -212,6 +236,7 @@ body, p {
   margin-bottom: 45px;
 }
 #whyWe .main_info-why .main_why-item p {
+  color: #333333;
   color: #333333;
   font-family: "Muller Regular";
   font-size: 14px;
@@ -535,13 +560,32 @@ header .container .call-back-wrapper button {
 .services {
   margin-top: 100px;
   background-color: #d1d3d4;
-  padding: 18px 0 80px 0;
+  padding: 0 0 80px 0;
 }
 .services .container {
   display: flex;
 }
 .services .container .services-item {
+  padding-top: 18px;
   width: 25%;
+  position: relative;
+}
+.services .container .services-item-hidden {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: underline;
+  background-color: #3a6f88;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 35px;
+}
+.services .container .services-item-hidden a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .services .container .services-item-visible {
   cursor: pointer;
