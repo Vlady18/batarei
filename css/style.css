@@ -1,0 +1,984 @@
+@font-face {
+  font-family: "Muller Regular";
+  src: url("../fonts/MullerRegular.eot") format("eot"), url("../fonts/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Muller Medium";
+  src: url("../fonts/MullerMedium.eot") format("eot"), url("../fonts/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Muller Extra Bold";
+  src: url("../fonts/MullerExtraBold.eot") format("eot"), url("../fonts/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Muller Bold";
+  src: url("../fonts/MullerBold.eot") format("eot"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype"); }
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+body, p {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 90%;
+  max-width: 1340px;
+  margin: 0 auto; }
+
+.button {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 40px;
+  border-radius: 20px;
+  background: #3c8a08;
+  text-align: center;
+  line-height: 40px; }
+
+#our_works {
+  display: none;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  overflow-x: hidden; }
+  #our_works .container {
+    position: relative; }
+    #our_works .container .next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: 999;
+      cursor: pointer;
+      transform: translate(-50%, -50%); }
+    #our_works .container .prev {
+      left: 25px;
+      position: absolute;
+      top: 50%;
+      z-index: 999;
+      cursor: pointer;
+      transform: translate(-50%, -50%); }
+  #our_works .work_wrap {
+    padding: 0px 70px; }
+    #our_works .work_wrap .work_item {
+      padding-bottom: 20px;
+      margin-right: 10px; }
+      #our_works .work_wrap .work_item img {
+        display: block;
+        padding: 5px;
+        margin: 0 auto;
+        border: 1px solid #b2b2b2;
+        box-shadow: -1px 20px 16px -17px rgba(0, 0, 0, 0.29); }
+
+#sertific {
+  display: none;
+  background: #d7e0e4;
+  padding: 50px 0px 55px 0px; }
+  #sertific .sertific_wrap {
+    display: flex;
+    justify-content: space-between; }
+    #sertific .sertific_wrap .sertific_item.sm {
+      max-width: 360px; }
+      #sertific .sertific_wrap .sertific_item.sm .h4 {
+        color: #3a6f88; }
+    #sertific .sertific_wrap .photo_sertificate.sertific_item {
+      max-width: 290px;
+      position: relative; }
+      #sertific .sertific_wrap .photo_sertificate.sertific_item .photo_srtif {
+        position: relative; }
+      #sertific .sertific_wrap .photo_sertificate.sertific_item .prev, #sertific .sertific_wrap .photo_sertificate.sertific_item .next {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        background: #000000;
+        text-align: center; }
+      #sertific .sertific_wrap .photo_sertificate.sertific_item .next {
+        right: 0px; }
+      #sertific .sertific_wrap .photo_sertificate.sertific_item .prev {
+        right: 50px; }
+    #sertific .sertific_wrap .sertific_item {
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      #sertific .sertific_wrap .sertific_item img {
+        margin: 0 auto;
+        display: block; }
+      #sertific .sertific_wrap .sertific_item .h4 {
+        color: #202124;
+        font-family: "Muller Extra Bold";
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-bottom: 25px; }
+      #sertific .sertific_wrap .sertific_item p {
+        margin-bottom: 10px;
+        color: #202124;
+        font-family: "Muller Regular";
+        font-size: 18px;
+        line-height: 24px; }
+      #sertific .sertific_wrap .sertific_item a.button {
+        width: 175px; }
+
+#partners {
+  display: none;
+  padding: 100px 0px 125px 0px;
+  background: url("../img/bath.jpg") no-repeat center/cover; }
+  #partners .container {
+    display: flex;
+    justify-content: flex-end; }
+  #partners .partner_block {
+    padding: 30px 55px 28px 55px;
+    max-width: 555px;
+    background: #3a6f88; }
+    #partners .partner_block .h5 {
+      color: #ffffff;
+      font-family: "Muller Extra Bold";
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 36px;
+      max-width: 225px; }
+    #partners .partner_block p {
+      color: #ffffff;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-family: "Muller Regular";
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 450px; }
+    #partners .partner_block a {
+      display: inline-block;
+      width: 177px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 20px;
+      padding: 12px 0px;
+      text-align: center;
+      background: #3c8a08;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Muller Regular";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase; }
+
+#whyWe {
+  display: none; }
+  #whyWe .main_info-why .main_why-item {
+    margin-bottom: 45px; }
+    #whyWe .main_info-why .main_why-item p {
+      color: #333333;
+      font-family: "Muller Regular";
+      font-size: 14px; }
+    #whyWe .main_info-why .main_why-item h2 {
+      color: #3c8a08;
+      font-family: "Muller Extra Bold";
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-transform: uppercase; }
+    #whyWe .main_info-why .main_why-item h3 {
+      color: #3a6f88;
+      font-family: "Muller Extra Bold";
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+
+#whyWe {
+  padding: 75px 0; }
+  #whyWe .h3 {
+    color: #202124;
+    font-family: "Muller Extra Bold";
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center; }
+  #whyWe .h6 {
+    color: #202124;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    font-family: "Muller Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center; }
+  #whyWe .advantages_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    #whyWe .advantages_wrap .advantages_item {
+      display: flex; }
+      #whyWe .advantages_wrap .advantages_item .adv_info {
+        max-width: 210px;
+        margin-left: 25px; }
+        #whyWe .advantages_wrap .advantages_item .adv_info-head {
+          color: #202124;
+          font-family: "Muller Regular";
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 24px;
+          margin-bottom: 30px; }
+        #whyWe .advantages_wrap .advantages_item .adv_info-body {
+          color: #202124;
+          font-family: "Muller Regular";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 18px; }
+  #whyWe .why_form {
+    margin-top: 75px;
+    padding: 45px 60px 65px 60px;
+    background: url(../img/why.jpg) no-repeat 0% 0%/cover; }
+    #whyWe .why_form .h5 {
+      color: #202124;
+      font-family: "Muller Extra Bold";
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 48px;
+      max-width: 480px; }
+    #whyWe .why_form p {
+      color: #ffffff;
+      font-family: "Muller Regular";
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 355px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      line-height: 24px; }
+    #whyWe .why_form .field_group {
+      display: flex;
+      align-items: center; }
+      #whyWe .why_form .field_group input {
+        box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.09);
+        border: 1px solid #b2b2b2;
+        background-color: #ffffff;
+        width: 315px;
+        color: #5a5b5d;
+        font-family: "Muller Regular";
+        font-size: 18px;
+        height: 38px;
+        margin-right: 20px;
+        padding: 0px 10px;
+        border-radius: 4px; }
+      #whyWe .why_form .field_group button {
+        background: #3c8a08;
+        color: #ffffff;
+        font-family: "Muller Regular";
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border: 1px solid #3c8a08;
+        text-align: center;
+        height: 38px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 20px;
+        cursor: pointer; }
+
+#map {
+  display: none;
+  overflow-x: hidden; }
+  #map img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+
+footer {
+  display: none; }
+  footer .foot_feedback {
+    background: #3a6f88;
+    padding: 38px 0px 38px 0px; }
+    footer .foot_feedback .container {
+      display: flex;
+      justify-content: space-between; }
+    footer .foot_feedback .feedback-company {
+      max-width: 230px; }
+      footer .foot_feedback .feedback-company p.pol {
+        margin: 20px 0px; }
+      footer .foot_feedback .feedback-company p {
+        color: #84d5fb;
+        font-family: "Muller Regular";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px; }
+        footer .foot_feedback .feedback-company p span {
+          display: block;
+          color: #ffffff;
+          font-family: "Muller Regular";
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14px; }
+    footer .foot_feedback .feedback_contacts {
+      background: #244455;
+      padding: 30px;
+      display: flex;
+      max-width: 937px; }
+      footer .foot_feedback .feedback_contacts .vk_item {
+        display: flex;
+        align-items: center; }
+        footer .foot_feedback .feedback_contacts .vk_item span {
+          display: inline-block;
+          margin-right: 20px;
+          color: #ffffff;
+          font-family: "Muller Extra Bold";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 30px;
+          text-transform: uppercase; }
+      footer .foot_feedback .feedback_contacts .contact_item {
+        width: 25%; }
+        footer .foot_feedback .feedback_contacts .contact_item .contact_head-it {
+          color: #70c5ec;
+          font-family: "Muller Extra Bold";
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 15px; }
+        footer .foot_feedback .feedback_contacts .contact_item p {
+          color: #ffffff;
+          font-family: "Muller Regular";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px; }
+        footer .foot_feedback .feedback_contacts .contact_item p.address {
+          line-height: 18px; }
+        footer .foot_feedback .feedback_contacts .contact_item a {
+          display: block;
+          color: #ffffff;
+          font-family: "Muller Regular";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          text-decoration: none; }
+  footer .foot_menu {
+    display: none;
+    background: #d8d8d8;
+    padding: 30px 0px 40px 0px; }
+    footer .foot_menu_nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      footer .foot_menu_nav ul a {
+        text-decoration: none;
+        color: #244455;
+        font-family: "Muller Extra Bold";
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px; }
+      footer .foot_menu_nav ul li.dev a {
+        display: flex;
+        align-items: center; }
+        footer .foot_menu_nav ul li.dev a span {
+          display: inline-block;
+          text-align: right;
+          margin-right: 10px; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0; }
+    header .container .logo-wrapper {
+      display: flex;
+      align-items: center; }
+      header .container .logo-wrapper .menu-button {
+        margin-right: 15px; }
+        header .container .logo-wrapper .menu-button span {
+          display: block;
+          width: 44px;
+          height: 2px;
+          background-color: #202124;
+          margin-bottom: 10px; }
+          header .container .logo-wrapper .menu-button span:last-child {
+            margin-bottom: 0; }
+      header .container .logo-wrapper .logo {
+        height: 56px; }
+    header .container .info-wrapper {
+      display: flex; }
+      header .container .info-wrapper .info-item {
+        color: #202124;
+        font-family: "Muller Regular";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        display: flex;
+        align-items: center; }
+        header .container .info-wrapper .info-item img {
+          width: 16px;
+          height: 9px;
+          margin-right: 10px;
+          margin-top: 5px;
+          align-self: flex-start; }
+        header .container .info-wrapper .info-item div p {
+          font-weight: bold; }
+        header .container .info-wrapper .info-item div span {
+          display: block; }
+      header .container .info-wrapper .info-phone img {
+        width: 41px;
+        height: 41px;
+        margin-right: 15px; }
+      header .container .info-wrapper .info-phone div .info-phone-number {
+        font-family: "Muller Bold";
+        font-size: 18px;
+        font-weight: 400; }
+    header .container .call-back-wrapper button {
+      width: 178px;
+      height: 39px;
+      background-color: #3c8a08;
+      color: #ffffff;
+      font-family: "Muller Regular";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+      outline: none;
+      border: none;
+      border-radius: 20px; }
+
+.services {
+  margin-top: 100px;
+  background-color: #d1d3d4;
+  padding: 18px 0 80px 0; }
+  .services .container {
+    display: flex; }
+    .services .container .services-item {
+      width: 25%; }
+      .services .container .services-item-visible {
+        cursor: pointer;
+        border-right: 1px solid #202124;
+        padding: 40px 20px 50px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px; }
+        .services .container .services-item-visible-name {
+          display: flex; }
+          .services .container .services-item-visible-name p {
+            width: 145px;
+            font-family: "Muller Extra Bold";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px; }
+          .services .container .services-item-visible-name img {
+            width: 38px;
+            height: 33px;
+            margin-right: 20px; }
+
+.sec-menu {
+  margin-top: -68px; }
+  .sec-menu .container {
+    background-color: #3c8a08; }
+    .sec-menu .container .sec-menu-wrapper {
+      color: #ffffff;
+      font-family: "Muller Extra Bold";
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 21px 15px 30px; }
+      .sec-menu .container .sec-menu-wrapper ul li {
+        display: inline-block;
+        margin-right: 60px; }
+        .sec-menu .container .sec-menu-wrapper ul li a {
+          text-decoration: none;
+          color: #ffffff; }
+      .sec-menu .container .sec-menu-wrapper form {
+        position: relative; }
+        .sec-menu .container .sec-menu-wrapper form input {
+          width: 240px;
+          height: 38px;
+          box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.09);
+          border: 1px solid #b2b2b2;
+          padding-left: 20px;
+          padding-right: 35px;
+          color: #7e8284;
+          font-family: "Muller Regular";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 12.99px;
+          outline: none; }
+        .sec-menu .container .sec-menu-wrapper form img {
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%); }
+
+.actions-slider .container .actions-slider-wrapper .actions-slider-item {
+  height: 378px;
+  width: 100%;
+  background-image: url(../img/slide-bg.jpg);
+  display: flex;
+  align-items: center; }
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item-content {
+    background-color: #202124;
+    font-family: "Muller Regular";
+    color: #ffffff;
+    width: fit-content;
+    padding: 20px 80px 10px 30px;
+    margin-left: 60px; }
+    .actions-slider .container .actions-slider-wrapper .actions-slider-item-content p {
+      font-family: "Muller Extra Bold";
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 36px;
+      max-width: 390px;
+      margin-bottom: 25px; }
+    .actions-slider .container .actions-slider-wrapper .actions-slider-item-content span {
+      font-size: 30px;
+      display: block;
+      margin-bottom: 30px; }
+    .actions-slider .container .actions-slider-wrapper .actions-slider-item-content a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #ffffff;
+      width: 150px;
+      height: 39px;
+      font-size: 13px;
+      background-color: #3c8a08;
+      border-radius: 20px; }
+
+.first-item {
+  background-image: url("../img/batery.jpg"); }
+
+.second-item {
+  background-image: url("../img/fon2.png"); }
+
+.third-item {
+  background-image: url("../img/fon3.jpg"); }
+
+.fourth-item {
+  background-image: url("../img/fon4.jpg"); }
+
+.we-offer {
+  padding: 64px 0 80px 0; }
+  .we-offer .container {
+    display: flex; }
+    .we-offer .container .we-offer-left {
+      margin-right: 120px;
+      width: fit-content;
+      font-family: "Muller Regular";
+      font-size: 15px; }
+      .we-offer .container .we-offer-left p.h3 {
+        font-family: "Muller Extra Bold";
+        font-size: 45px;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 315px; }
+      .we-offer .container .we-offer-left .hr-hl {
+        width: 96px;
+        height: 5px;
+        background-color: rgba(49, 112, 143, 0.95);
+        margin-bottom: 20px; }
+      .we-offer .container .we-offer-left p.offer-text {
+        width: 300px;
+        margin-bottom: 40px; }
+      .we-offer .container .we-offer-left img {
+        margin-bottom: 20px; }
+      .we-offer .container .we-offer-left p.h4 {
+        font-family: "Muller Extra Bold";
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase; }
+      .we-offer .container .we-offer-left form {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .we-offer .container .we-offer-left form input {
+          width: 316px;
+          height: 38px;
+          box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.09);
+          border: 1px solid #b2b2b2;
+          outline: none;
+          padding: 0 10px;
+          margin-bottom: 11px;
+          border-radius: 5px; }
+        .we-offer .container .we-offer-left form button {
+          width: 263px;
+          height: 39px;
+          background-color: #3c8a08;
+          border-radius: 20px;
+          border: none;
+          outline: none; }
+    .we-offer .container .we-offer-right {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: -10px; }
+      .we-offer .container .we-offer-right-item {
+        position: relative;
+        margin: 10px;
+        width: calc(50% - 20px);
+        font-family: "Muller Regular";
+        color: #ffffff;
+        background-size: 100% 100%;
+        padding: 36px 10px 72px 30px; }
+        .we-offer .container .we-offer-right-item .bga {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #000000;
+          opacity: 0.5;
+          z-index: 1; }
+        .we-offer .container .we-offer-right-item p {
+          position: relative;
+          font-family: "Muller Extra Bold";
+          font-size: 29px;
+          font-weight: 400;
+          width: 170px;
+          margin-bottom: 10px;
+          z-index: 3; }
+        .we-offer .container .we-offer-right-item .hr-hl {
+          position: relative;
+          width: 96px;
+          height: 5px;
+          background-color: #3c8a08;
+          margin-bottom: 30px;
+          z-index: 2; }
+        .we-offer .container .we-offer-right-item ul {
+          position: relative;
+          z-index: 2; }
+          .we-offer .container .we-offer-right-item ul li {
+            font-size: 18px;
+            text-decoration: underline;
+            margin-bottom: 5px; }
+            .we-offer .container .we-offer-right-item ul li a {
+              text-decoration: none;
+              color: white; }
+
+.who-we {
+  background-color: #d7e0e4;
+  padding: 60px 0; }
+  .who-we .container {
+    display: flex;
+    justify-content: space-between; }
+    .who-we .container .who-we-right p {
+      font-family: "Muller Extra Bold";
+      font-size: 45px;
+      text-transform: uppercase;
+      margin-bottom: 35px; }
+    .who-we .container .who-we-right span {
+      display: block;
+      font-family: "Muller Regular";
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 575px; }
+    .who-we .container .who-we-right a {
+      text-decoration: none;
+      width: 177px;
+      height: 39px;
+      background-color: #3c8a08;
+      border-radius: 20px;
+      color: #ffffff;
+      font-family: "Muller Regular";
+      font-size: 14px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px; }
+
+.our-serv {
+  display: none;
+  padding: 90px 0; }
+  .our-serv .container {
+    display: flex; }
+    .our-serv .container .our-serv-left {
+      width: fit-content;
+      color: #202124;
+      font-family: "Muller Extra Bold";
+      margin-right: 50px; }
+      .our-serv .container .our-serv-left p {
+        font-size: 45px;
+        max-width: 200px; }
+      .our-serv .container .our-serv-left .hr-hl {
+        width: 96px;
+        height: 5px;
+        background-color: #3a6f88;
+        margin-bottom: 20px; }
+      .our-serv .container .our-serv-left span {
+        font-size: 18px;
+        width: 204px;
+        display: block; }
+    .our-serv .container .our-serv-right {
+      width: 100%;
+      display: flex; }
+      .our-serv .container .our-serv-right-left {
+        background: rgba(220, 220, 220, 0.66);
+        width: 50%;
+        padding: 30px 10px 60px 50px; }
+        .our-serv .container .our-serv-right-left p {
+          font-family: "Muller Extra Bold";
+          font-size: 18px;
+          margin-bottom: 20px; }
+        .our-serv .container .our-serv-right-left ul li {
+          margin-left: 10px;
+          position: relative;
+          font-family: "Muller Regular";
+          font-size: 18px;
+          padding-left: 10px;
+          margin-bottom: 7px; }
+          .our-serv .container .our-serv-right-left ul li::after {
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            content: "";
+            width: 9px;
+            height: 9px;
+            background-image: url("../img/dot.jpg"); }
+      .our-serv .container .our-serv-right-right {
+        width: 50%;
+        background-image: url("../img/slbg.png");
+        background-size: 100% 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; }
+        .our-serv .container .our-serv-right-right a {
+          cursor: pointer;
+          width: 177px;
+          height: 39px;
+          background-color: #3c8a08;
+          display: block;
+          line-height: 42px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 20px;
+          font-family: "Muller Regular";
+          font-size: 14px; }
+
+@media all and (max-width: 1420px) {
+  .we-offer .container .we-offer-right-item ul li {
+    font-size: 15px; } }
+@media all and (max-width: 1330px) {
+  .we-offer .container .we-offer-left {
+    margin-right: 40px; }
+
+  .sec-menu .container .sec-menu-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    width: 100%; }
+    .sec-menu .container .sec-menu-wrapper ul li {
+      margin-right: 0; }
+  .sec-menu .container .sec-menu-wrapper form input {
+    width: 160px; } }
+@media all and (max-width: 1280px) {
+  .we-offer .container {
+    flex-direction: column;
+    align-items: center; }
+    .we-offer .container .we-offer-left {
+      margin-bottom: 30px;
+      margin-right: 0; }
+
+  .services .container .services-item-visible {
+    padding: 10px 15px; }
+
+  .services .container .services-item-visible-name p {
+    width: fit-content;
+    font-size: 16px; } }
+@media all and (max-width: 1215px) {
+  header .container .logo-wrapper .logo {
+    height: auto;
+    width: 151px; } }
+@media all and (max-width: 1170px) {
+  header .container .info-wrapper .info-item.info-phone {
+    display: none; }
+
+  header .container .info-wrapper .info-item {
+    font-size: 12px; } }
+@media all and (max-width: 1060px) {
+  .services .container .services-item-visible-name p {
+    font-size: 12px; } }
+@media all and (max-width: 992px) {
+  footer .foot_menu_nav ul li {
+    display: none; }
+
+  footer .foot_menu_nav ul li.dev {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+
+  footer .foot_feedback .container {
+    flex-direction: column; }
+
+  footer .foot_feedback .feedback-company {
+    max-width: 100%;
+    margin-bottom: 15px; }
+
+  #whyWe .why_form .field_group input {
+    width: 220px;
+    margin-right: 10px; }
+
+  #whyWe .why_form {
+    padding: 45px 20px 65px 20px; } }
+@media all and (max-width: 930px) {
+  .services .container {
+    flex-direction: column;
+    align-items: center; }
+    .services .container .services-item {
+      width: 300px; }
+      .services .container .services-item-visible {
+        border-right: none;
+        border-bottom: 1px solid black; }
+
+  .services .container .services-item-visible-name {
+    align-items: center; } }
+@media all and (max-width: 840px) {
+  header .container .info-wrapper .info-item:last-child {
+    display: none; }
+
+  .sec-menu .container .sec-menu-wrapper {
+    flex-direction: column; }
+    .sec-menu .container .sec-menu-wrapper ul {
+      margin-bottom: 15px; }
+    .sec-menu .container .sec-menu-wrapper form input {
+      width: 240px; } }
+@media all and (max-width: 800px) {
+  .we-offer .container .we-offer-right-item {
+    width: calc(100% - 20px); } }
+@media all and (max-width: 768px) {
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .actions-slider .container .actions-slider-wrapper .actions-slider-item-content {
+      margin: 0;
+      width: 100%; }
+      .actions-slider .container .actions-slider-wrapper .actions-slider-item-content p {
+        font-size: 26px; }
+      .actions-slider .container .actions-slider-wrapper .actions-slider-item-content span {
+        font-size: 20px; }
+
+  .sec-menu .container .sec-menu-wrapper ul {
+    flex-direction: column;
+    align-items: center; }
+    .sec-menu .container .sec-menu-wrapper ul li {
+      margin-bottom: 10px; }
+      .sec-menu .container .sec-menu-wrapper ul li:last-child {
+        margin-bottom: 0; }
+
+  #partners .container {
+    justify-content: center; }
+
+  #whyWe .advantages_wrap {
+    flex-direction: column; }
+
+  #whyWe .advantages_wrap .advantages_item .adv_info {
+    max-width: 100%; }
+
+  #whyWe .advantages_wrap .advantages_item .adv_info-head {
+    margin-bottom: 10px; }
+
+  #whyWe .advantages_wrap .advantages_item {
+    margin-bottom: 15px; }
+
+  #whyWe .advantages_wrap .advantages_item .adv_img {
+    min-width: 62px; }
+
+  #whyWe .advantages_wrap .advantages_item .adv_img img {
+    max-width: none; }
+
+  #whyWe .why_form {
+    background: #3a6f88; }
+
+  #whyWe .why_form .h5 {
+    max-width: 100%; }
+
+  #whyWe .why_form p {
+    max-width: 100%; }
+
+  #whyWe .why_form .field_group {
+    flex-direction: column;
+    align-items: flex-start; }
+
+  #whyWe .why_form .field_group input {
+    width: 50%;
+    margin-bottom: 10px; }
+
+  footer .foot_feedback .feedback_contacts {
+    flex-wrap: wrap; }
+
+  footer .foot_feedback .feedback_contacts .contact_item {
+    width: 50%; } }
+@media all and (max-width: 650px) {
+  header .container .info-wrapper .info-item {
+    display: none; } }
+@media all and (max-width: 576px) {
+  #partners .partner_block a {
+    display: block;
+    margin: 0 auto; }
+
+  #partners .partner_block .h5 {
+    max-width: auto; }
+
+  #partners .partner_block {
+    padding: 30px 30px 28px 30px; }
+
+  #whyWe .h3 {
+    font-size: 34px; }
+
+  footer .foot_feedback .feedback_contacts .contact_item {
+    width: 100%;
+    margin-bottom: 20px; }
+
+  #whyWe .why_form .field_group input {
+    width: 100%; }
+
+  #whyWe .why_form .field_group button {
+    width: 100%; }
+
+  #whyWe .why_form .h5 {
+    font-size: 26px;
+    line-height: 30px; } }
+@media all and (max-width: 440px) {
+  .we-offer .container .we-offer-left p.h3 {
+    font-size: 40px; }
+
+  .we-offer .container .we-offer-left img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px; }
+
+  .we-offer .container .we-offer-left form {
+    margin: 0 auto; }
+    .we-offer .container .we-offer-left form input {
+      width: 300px; }
+
+  header .container .logo-wrapper .logo {
+    display: none; }
+
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item-content {
+    padding: 20px; }
+    .actions-slider .container .actions-slider-wrapper .actions-slider-item-content p {
+      font-size: 25px;
+      line-height: inherit;
+      width: auto; } }
+
+/*# sourceMappingURL=style.css.map */

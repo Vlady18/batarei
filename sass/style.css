@@ -232,7 +232,7 @@ body, p {
 }
 
 #whyWe {
-  padding: 75px 0px;
+  padding: 75px 0;
 }
 #whyWe .h3 {
   color: #202124;
@@ -801,6 +801,9 @@ header .container .call-back-wrapper button {
   display: flex;
   justify-content: space-between;
 }
+.who-we .container .who-we-right {
+  margin-left: 20px;
+}
 .who-we .container .who-we-right p {
   font-family: "Muller Extra Bold";
   font-size: 45px;
@@ -914,7 +917,115 @@ header .container .call-back-wrapper button {
   font-size: 14px;
 }
 
+@media all and (max-width: 1420px) {
+  .we-offer .container .we-offer-right-item ul li {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 1330px) {
+  .our-serv .container .our-serv-right-left ul li {
+    font-size: 15px;
+  }
+
+  .we-offer .container .we-offer-left {
+    margin-right: 40px;
+  }
+
+  .sec-menu .container .sec-menu-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    width: 100%;
+  }
+  .sec-menu .container .sec-menu-wrapper ul li {
+    margin-right: 0;
+  }
+  .sec-menu .container .sec-menu-wrapper form input {
+    width: 160px;
+  }
+}
+@media all and (max-width: 1280px) {
+  .we-offer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .we-offer .container .we-offer-left {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .services .container .services-item-visible {
+    padding: 10px 15px;
+  }
+
+  .services .container .services-item-visible-name p {
+    width: fit-content;
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 1215px) {
+  .our-serv .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-serv .container .our-serv-left {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  .our-serv .container .our-serv-left p {
+    max-width: inherit;
+  }
+  .our-serv .container .our-serv-left span {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .our-serv .container .our-serv-left .hr-hl {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  header .container .logo-wrapper .logo {
+    height: auto;
+    width: 151px;
+  }
+}
+@media all and (max-width: 1170px) {
+  header .container .info-wrapper .info-item.info-phone {
+    display: none;
+  }
+
+  header .container .info-wrapper .info-item {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 1060px) {
+  .services .container .services-item-visible-name p {
+    font-size: 12px;
+  }
+}
 @media all and (max-width: 992px) {
+  .who-we .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .who-we .container .who-we-left {
+    margin-bottom: 10px;
+  }
+
+  .who-we .container .who-we-right {
+    margin-left: 0;
+  }
+  .who-we .container .who-we-right p {
+    text-align: center;
+  }
+  .who-we .container .who-we-right span {
+    max-width: inherit;
+  }
+  .who-we .container .who-we-right a {
+    margin: 0 auto;
+  }
+
   footer .foot_menu_nav ul li {
     display: none;
   }
@@ -943,7 +1054,82 @@ header .container .call-back-wrapper button {
     padding: 45px 20px 65px 20px;
   }
 }
+@media all and (max-width: 930px) {
+  .our-serv .container .our-serv-right {
+    flex-direction: column;
+  }
+  .our-serv .container .our-serv-right-left {
+    width: 100%;
+  }
+  .our-serv .container .our-serv-right-right {
+    width: 100%;
+    height: 300px;
+  }
+
+  .services .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .container .services-item {
+    width: 300px;
+  }
+  .services .container .services-item-visible {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .services .container .services-item-visible-name {
+    align-items: center;
+  }
+}
+@media all and (max-width: 840px) {
+  header .container .info-wrapper .info-item:last-child {
+    display: none;
+  }
+
+  .sec-menu .container .sec-menu-wrapper {
+    flex-direction: column;
+  }
+  .sec-menu .container .sec-menu-wrapper ul {
+    margin-bottom: 15px;
+  }
+  .sec-menu .container .sec-menu-wrapper form input {
+    width: 240px;
+  }
+}
+@media all and (max-width: 800px) {
+  .we-offer .container .we-offer-right-item {
+    width: calc(100% - 20px);
+  }
+}
 @media all and (max-width: 768px) {
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item-content {
+    margin: 0;
+    width: 100%;
+  }
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item-content p {
+    font-size: 26px;
+  }
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item-content span {
+    font-size: 20px;
+  }
+
+  .sec-menu .container .sec-menu-wrapper ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-menu .container .sec-menu-wrapper ul li {
+    margin-bottom: 10px;
+  }
+  .sec-menu .container .sec-menu-wrapper ul li:last-child {
+    margin-bottom: 0;
+  }
+
   #partners .container {
     justify-content: center;
   }
@@ -1002,6 +1188,11 @@ header .container .call-back-wrapper button {
     width: 50%;
   }
 }
+@media all and (max-width: 650px) {
+  header .container .info-wrapper .info-item {
+    display: none;
+  }
+}
 @media all and (max-width: 576px) {
   #partners .partner_block a {
     display: block;
@@ -1036,6 +1227,50 @@ header .container .call-back-wrapper button {
   #whyWe .why_form .h5 {
     font-size: 26px;
     line-height: 30px;
+  }
+}
+@media all and (max-width: 480px) {
+  .our-serv .container .our-serv-right-left {
+    padding: 20px;
+  }
+  .our-serv .container .our-serv-right-left ul li {
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .our-serv .container .our-serv-right-left ul li::after {
+    display: none;
+  }
+}
+@media all and (max-width: 440px) {
+  .we-offer .container .we-offer-left p.h3 {
+    font-size: 40px;
+  }
+
+  .we-offer .container .we-offer-left img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .we-offer .container .we-offer-left form {
+    margin: 0 auto;
+  }
+  .we-offer .container .we-offer-left form input {
+    width: 300px;
+  }
+
+  header .container .logo-wrapper .logo {
+    display: none;
+  }
+
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item-content {
+    padding: 20px;
+  }
+  .actions-slider .container .actions-slider-wrapper .actions-slider-item-content p {
+    font-size: 25px;
+    line-height: inherit;
+    width: auto;
   }
 }
 
