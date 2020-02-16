@@ -45,7 +45,6 @@ body, p {
   font-family: "Muller Regular";
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   height: 40px;
@@ -58,19 +57,40 @@ body, p {
 #our_works {
   padding-top: 65px;
   padding-bottom: 65px;
+  overflow-x: hidden;
+}
+#our_works .container {
+  position: relative;
+}
+#our_works .container .next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 999;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+#our_works .container .prev {
+  left: 25px;
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
 }
 #our_works .work_wrap {
   padding: 0px 70px;
 }
 #our_works .work_wrap .work_item {
   padding-bottom: 20px;
+  margin-right: 10px;
 }
 #our_works .work_wrap .work_item img {
   display: block;
-  margin-right: 10px;
   padding: 5px;
+  margin: 0 auto;
   border: 1px solid #b2b2b2;
-  box-shadow: -1px 20px 16px -9px rgba(0, 0, 0, 0.29);
+  box-shadow: -1px 20px 16px -17px rgba(0, 0, 0, 0.29);
 }
 
 #sertific {
