@@ -2,9 +2,10 @@ $(function(){
     $('.actions-slider-wrapper').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
     });
-
 
     $('.photo_sertificate').slick({
         infinite: true,

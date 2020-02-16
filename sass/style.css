@@ -774,7 +774,7 @@ header .container .call-back-wrapper button {
 .actions-slider .container .actions-slider-wrapper .actions-slider-item {
   height: 378px;
   width: 100%;
-  background-image: url(../img/slide-bg.jpg);
+  background: url(../img/slide-bg.jpg) no-repeat center/cover;
   display: flex;
   align-items: center;
 }
