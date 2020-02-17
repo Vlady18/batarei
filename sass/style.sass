@@ -1058,6 +1058,8 @@ header
     height: auto
     width: 151px
 @media all and (max-width: 1170px)
+  #district .acard_ul li
+    width: auto
   header .container .info-wrapper .info-item.info-phone
     display: none
   header .container .info-wrapper .info-item
@@ -1066,6 +1068,13 @@ header
   .services .container .services-item-visible-name p
     font-size: 12px
 @media all and (max-width: 992px)
+  #district .district_bg .offer_dist
+    flex-direction: column
+    align-items: center
+  #district .district_bg .offer_dist .list_distr .distr_ban p
+    font-size: 20px
+  #district .district_bg .offer_dist .list_distr .distr_ban p strong
+    font-size: 28px
   .who-we .container
     flex-direction: column
     align-items: center
@@ -1128,6 +1137,10 @@ header
   .we-offer .container .we-offer-right-item
     width: calc(100% - 20px)
 @media all and (max-width: 768px)
+  #district .acard_ul
+    flex-wrap: wrap
+  #district .acard_ul li
+    width: calc(50% - 2px)
   #sertific .sertific_wrap .sertific_item.sm
     max-width: 100%
   #sertific .sertific_wrap .sertific_item
@@ -1196,6 +1209,19 @@ header
   header .container .info-wrapper .info-item
     display: none
 @media all and (max-width: 576px)
+  #district .district_bg .offer_dist .list_distr .distr_ban p strong
+    font-size: 25px
+  #district .district_bg .offer_dist .list_distr .distr_ban
+    flex-direction: column
+    align-items: flex-start
+  #district .district_bg .offer_dist .list_distr .distr_ban p.ban-aft:after
+    display: none
+  #district .district_bg .offer_dist .list_distr .distr_ban p.ban-aft
+    margin: 10px 0px
+  #district .district_bg .offer_dist .list_distr .offer_distr
+    flex-direction: column
+  #district .district_bg .offer_dist .list_distr .offer_distr .point_distr-l
+    margin-right: 0
   .slick-dots li
     background: #d7e0e4
     border-radius: 50%
