@@ -57,6 +57,10 @@ $(function(){
             },
         ]
     });
+    $('.acard_ul li').on('click', function(){
+        $('.acard_ul li').removeClass('active');
+        $(this).addClass('active');
+    });
 });
     new WOW().init();
 
