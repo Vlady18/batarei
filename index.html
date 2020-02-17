@@ -6,12 +6,29 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
+<div id="side-menu" class="dpn">
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">каталог услуг</a></li>
+        <li><a href="#">Компания </a></li>
+        <li><a href="#">Сертификаты</a></li>
+        <li><a href="#">Прайсы</a></li>
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Партнерам</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+    <div id="menuExit">
+        <img src="img/mex.png" alt="">
+    </div>
+</div>
+
 <header>
 
     <div class="container">
@@ -167,6 +184,8 @@
 
 <section class="actions-slider">
     <div class="container">
+        <div class="prev" id="prevFir"><img src="img/arrow_sm.png" alt=""></div>
+        <div class="next" id="nextFir"><img src="img/arrow_r-sm.png" alt=""></div>
         <div class="actions-slider-wrapper">
             <div class="actions-slider-item">
                 <div class="actions-slider-item-content">
@@ -202,7 +221,7 @@
             </form>
         </div>
         <div class="we-offer-right">
-            <div class="we-offer-right-item first-item">
+            <div class="we-offer-right-item first-item wow fadeInRight">
                 <div class="bga"></div>
                 <p>Радиаторы отопления</p>
                 <div class="hr-hl"></div>
@@ -213,7 +232,7 @@
                     <li><a href="#">Установка батарей на сварке</a></li>
                 </ul>
             </div>
-            <div class="we-offer-right-item second-item">
+            <div class="we-offer-right-item second-item wow fadeInRight">
                 <div class="bga"></div>
                 <p>Стояки водоснабжения</p>
                 <div class="hr-hl"></div>
@@ -224,7 +243,7 @@
                     <li><a href="#">Перенос стояков водоснабжения</a></li>
                 </ul>
             </div>
-            <div class="we-offer-right-item third-item">
+            <div class="we-offer-right-item third-item wow fadeInRight">
                 <div class="bga"></div>
                 <p>Трубы водопроводные</p>
                 <div class="hr-hl"></div>
@@ -235,7 +254,7 @@
                     <li><a href="#">Сварка водопроводных труб</a></li>
                 </ul>
             </div>
-            <div class="we-offer-right-item fourth-item">
+            <div class="we-offer-right-item fourth-item wow fadeInRight">
                 <div class="bga"></div>
                 <p>Сантехнические услуги</p>
                 <div class="hr-hl"></div>
@@ -285,7 +304,18 @@
                 </ul>
             </div>
             <div class="our-serv-right-right">
-                <a href="#">заказать</a>
+                <div class="next" id="nextSec"><img src="img/arrow_r-sm.png" alt=""></div>
+                <div class="prev" id="prevSec"><img src="img/arrow_sm.png" alt=""></div>
+                <div id="sliderwrapper">
+                    <div class="our-serv-right-right-item">
+                        <img src="img/slbg.png" alt="">
+                        <a href="#">заказать</a>
+                    </div>
+                    <div class="our-serv-right-right-item">
+                        <img src="img/slbg.png" alt="">
+                        <a href="#">заказать</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -433,6 +463,7 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/common.js"></script>
 </body>
