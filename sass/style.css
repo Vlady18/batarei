@@ -127,6 +127,258 @@ body, p {
   line-height: 40px;
 }
 
+.breadcums {
+  padding: 15px 0;
+  background-color: #dddddd;
+}
+.breadcums .container ul li {
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+.breadcums .container ul li:last-child a {
+  color: #828282;
+}
+.breadcums .container ul li a {
+  text-decoration: none;
+  color: #3a6f88;
+}
+
+.opis {
+  padding: 36px 0 40px 0;
+}
+.opis .container p {
+  font-family: "Muller Extra Bold";
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.opis .container .hr-hl {
+  width: 96px;
+  height: 5px;
+  background-color: rgba(49, 112, 143, 0.95);
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
+.opis .container span {
+  display: block;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.price-list {
+  padding-bottom: 70px;
+}
+.price-list .container .p {
+  color: #3c8a08;
+  font-family: "Muller Extra Bold";
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.price-list .container .price-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.price-list .container .price-list-wrapper .price-list-item {
+  position: relative;
+  width: fit-content;
+  border: 1px solid #b2b2b2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px 23px 21px 23px;
+}
+.price-list .container .price-list-wrapper .price-list-item .sale {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+}
+.price-list .container .price-list-wrapper .price-list-item p {
+  font-family: "Muller Extra Bold";
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.price-list .container .price-list-wrapper .price-list-item span {
+  display: block;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.price-list .container .price-list-wrapper .price-list-item ul {
+  margin-bottom: 18px;
+}
+.price-list .container .price-list-wrapper .price-list-item ul li {
+  font-family: "Muller Regular";
+  color: #3a6f88;
+}
+.price-list .container .price-list-wrapper .price-list-item .price {
+  margin: 0 auto;
+}
+.price-list .container .price-list-wrapper .price-list-item .price p {
+  font-family: "Muller Regular";
+  font-size: 16px;
+}
+.price-list .container .price-list-wrapper .price-list-item .price p span {
+  display: inline-block;
+  color: #3c8a08;
+  font-family: "Muller Extra Bold";
+  font-size: 24px;
+}
+.price-list .container .price-list-wrapper .price-list-item a {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 177px;
+  height: 39px;
+  border-radius: 20px;
+  outline: none;
+  background-color: #3c8a08;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.lets-start {
+  padding-bottom: 75px;
+}
+.lets-start-h {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3a6f88;
+  font-family: "Muller Extra Bold";
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.lets-start .container {
+  padding: 50px 5px;
+  background-color: #3a6f88;
+}
+.lets-start .container .order-list {
+  display: flex;
+  justify-content: space-around;
+}
+.lets-start .container .order-list-item {
+  display: flex;
+}
+.lets-start .container .order-list-item .numb {
+  color: #3a6f88;
+  font-family: "Muller Extra Bold";
+  font-size: 30px;
+  width: 46px;
+  height: 46px;
+  border-radius: 46px;
+  background-color: #c2d6e0;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 20px;
+}
+.lets-start .container .order-list-item .text p {
+  color: #ffffff;
+  font-family: "Muller Extra Bold";
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+.lets-start .container .order-list-item .text span {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  max-width: 230px;
+  display: inline-block;
+}
+
+.mihail {
+  padding-bottom: 75px;
+}
+.mihail .container {
+  background-color: #d7e0e4;
+  display: flex;
+  min-height: 253px;
+  padding-right: 65px;
+  justify-content: space-between;
+}
+.mihail .container .text {
+  font-family: "Muller Extra Bold";
+  margin-left: -280px;
+  padding-top: 30px;
+}
+.mihail .container .text p {
+  font-size: 36px;
+  color: #3a6f88;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+.mihail .container .text span {
+  display: block;
+  color: #3a6f88;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  max-width: 450px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.mihail .container .text .bot-text {
+  text-transform: none;
+  font-size: 18px;
+  color: #3a6f88;
+  max-width: 456px;
+}
+.mihail .container form {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.mihail .container form p {
+  color: #202124;
+  font-family: "Muller Extra Bold";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.mihail .container form .hr-hl {
+  width: 96px;
+  height: 5px;
+  margin-top: 5px;
+  margin-bottom: 17px;
+  background-color: #3a6f88;
+}
+.mihail .container form input {
+  width: 316px;
+  height: 38px;
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.09);
+  color: #202124;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  padding: 0 11px;
+  outline: none;
+  margin-bottom: 11px;
+}
+.mihail .container form button {
+  width: 263px;
+  height: 39px;
+  background-color: #3c8a08;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
 #district .acard_ul {
   display: flex;
   width: 100%;
@@ -718,7 +970,7 @@ header .container .call-back-wrapper button {
 
 .services {
   margin-top: 100px;
-  background-color: #d1d3d4;
+  background-color: #c2d6e0;
   padding: 0 0 80px 0;
 }
 .services .container {
@@ -1194,6 +1446,15 @@ header .container .call-back-wrapper button {
   font-size: 14px;
 }
 
+@media all and (max-width: 1400px) {
+  .mihail .container .text {
+    margin-left: -150px;
+  }
+
+  .mihail .container {
+    padding-right: 20px;
+  }
+}
 @media all and (max-width: 1420px) {
   .we-offer .container .we-offer-right-item ul li {
     font-size: 15px;
@@ -1241,6 +1502,40 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 1215px) {
+  .mihail .container {
+    padding: 0 20px;
+  }
+  .mihail .container .img {
+    display: none;
+  }
+  .mihail .container .text {
+    margin-left: 0;
+  }
+
+  .lets-start .container .order-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lets-start .container .order-list-item {
+    margin-bottom: 15px;
+  }
+
+  .price-list .container .price-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .price-list .container .price-list-wrapper .price-list-item {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .price-list .container .price-list-wrapper .price-list-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 184px;
+  }
+
   .our-serv .container .our-serv-right {
     width: 100%;
     flex-direction: column;
@@ -1360,6 +1655,17 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 930px) {
+  .mihail .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .mihail .container form input {
+    width: 260px;
+  }
+
   .our-serv .container .our-serv-right {
     flex-direction: column;
   }
@@ -1387,6 +1693,10 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 840px) {
+  .price-list .container .price-list-wrapper .price-list-item {
+    width: 100%;
+  }
+
   header .container .info-wrapper .info-item:last-child {
     display: none;
   }
@@ -1628,6 +1938,14 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 440px) {
+  .lets-start .container .order-list-item .text p {
+    font-size: 22px;
+  }
+
+  .lets-start .container .order-list-item .numb {
+    margin-right: 10px;
+  }
+
   #prevSec {
     left: 0;
   }

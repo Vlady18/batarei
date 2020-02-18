@@ -62,6 +62,7 @@ $(function(){
         $(this).addClass('active');
     });
 });
+
     new WOW().init();
 
     $('.services-item').click(function() {
