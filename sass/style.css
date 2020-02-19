@@ -1008,6 +1008,9 @@ header .container .call-back-wrapper button {
   align-items: center;
   min-height: 100px;
 }
+.services .container .services-item-visible:last-child {
+  border-right: none;
+}
 .services .container .services-item-visible-name {
   display: flex;
 }
@@ -1043,7 +1046,7 @@ header .container .call-back-wrapper button {
 }
 .sec-menu .container .sec-menu-wrapper ul li {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 50px;
 }
 .sec-menu .container .sec-menu-wrapper ul li a {
   text-decoration: none;
@@ -1471,15 +1474,12 @@ header .container .call-back-wrapper button {
 
   .sec-menu .container .sec-menu-wrapper ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0px 10px;
     width: 100%;
   }
   .sec-menu .container .sec-menu-wrapper ul li {
-    margin-right: 0;
-  }
-  .sec-menu .container .sec-menu-wrapper form input {
-    width: 160px;
+    margin-right: 20px;
   }
 }
 @media all and (max-width: 1280px) {
@@ -1587,11 +1587,27 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 1060px) {
+  .sec-menu .container .sec-menu-wrapper {
+    padding: 15px 15px;
+  }
+
   .services .container .services-item-visible-name p {
     font-size: 12px;
   }
 }
 @media all and (max-width: 992px) {
+  .sec-menu .container .sec-menu-wrapper form input {
+    width: 250px;
+  }
+
+  .sec-menu .container .sec-menu-wrapper {
+    justify-content: flex-end;
+  }
+
+  .sec-menu .container .sec-menu-wrapper ul {
+    display: none;
+  }
+
   #district .district_bg .offer_dist {
     flex-direction: column;
     align-items: center;
@@ -1677,11 +1693,10 @@ header .container .call-back-wrapper button {
   }
 
   .services .container {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
   .services .container .services-item {
-    width: 300px;
+    width: 50%;
   }
   .services .container .services-item-visible {
     border-right: none;
@@ -1702,7 +1717,7 @@ header .container .call-back-wrapper button {
   }
 
   .sec-menu .container .sec-menu-wrapper {
-    flex-direction: column;
+    justify-content: flex-end;
   }
   .sec-menu .container .sec-menu-wrapper ul {
     margin-bottom: 15px;
@@ -1717,6 +1732,10 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 768px) {
+  .sec-menu .container .sec-menu-wrapper ul {
+    display: none;
+  }
+
   #district .acard_ul {
     flex-wrap: wrap;
   }
@@ -1780,11 +1799,11 @@ header .container .call-back-wrapper button {
     margin-bottom: 15px;
   }
 
-  #whyWe .advantages_wrap .advantages_item .adv_img {
+  #whyWe .advantages_wrap .advantages_item .better_img {
     min-width: 62px;
   }
 
-  #whyWe .advantages_wrap .advantages_item .adv_img img {
+  #whyWe .advantages_wrap .advantages_item .better_img img {
     max-width: none;
   }
 
@@ -1839,6 +1858,14 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 576px) {
+  .services .container {
+    flex-wrap: wrap;
+  }
+
+  .services .container .services-item {
+    width: 100%;
+  }
+
   #district .district_bg .offer_dist .list_distr .distr_ban p strong {
     font-size: 25px;
   }
@@ -1979,6 +2006,14 @@ header .container .call-back-wrapper button {
     font-size: 25px;
     line-height: inherit;
     width: auto;
+  }
+}
+@media all and (min-width: 1060px) {
+  .sec-menu .container .sec-menu-wrapper form input {
+    transition: all 0.3s ease;
+  }
+  .sec-menu .container .sec-menu-wrapper form input:focus {
+    width: 270px;
   }
 }
 
