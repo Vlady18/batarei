@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
@@ -391,7 +392,10 @@
         <div class="prev"><img src="img/l-lg-arr.jpg" alt=""></div>
         <div class="work_wrap">
             <div class="work_item">
-                <img src="img/batar.jpg" alt="batarei">
+                <a href="img/batar.jpg">
+                    <img src="img/batar.jpg" />
+                </a>
+<!--                <img src="img/batar.jpg" alt="batarei">-->
             </div>
             <div class="work_item">
                 <img src="img/batar.jpg" alt="batarei">
@@ -554,6 +558,12 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
 <script src="js/common.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".work_wrap").lightGallery();
+    });
+</script>
 </body>
 </html>
