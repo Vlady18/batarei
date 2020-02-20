@@ -18,6 +18,10 @@
   overflow: hidden;
 }
 
+.brn {
+  border-right: none !important;
+}
+
 #side-menu {
   top: 0;
   position: fixed;
@@ -303,6 +307,9 @@ body, p {
   min-height: 253px;
   padding-right: 65px;
   justify-content: space-between;
+}
+.mihail .container .img img {
+  height: 100%;
 }
 .mihail .container .text {
   font-family: "Muller Extra Bold";
@@ -981,6 +988,9 @@ header .container .call-back-wrapper button {
   width: 25%;
   position: relative;
 }
+.services .container .services-item:last-child-visible {
+  border-right: 0;
+}
 .services .container .services-item-hidden {
   z-index: 10;
   color: #ffffff;
@@ -1001,7 +1011,7 @@ header .container .call-back-wrapper button {
 }
 .services .container .services-item-visible {
   cursor: pointer;
-  border-right: 1px solid #202124;
+  border-right: 1px solid rgba(32, 33, 36, 0.24);
   padding: 40px 20px 50px 30px;
   display: flex;
   justify-content: space-between;
@@ -1220,6 +1230,7 @@ header .container .call-back-wrapper button {
   background-color: #3c8a08;
   border-radius: 20px;
   border: none;
+  color: white;
   outline: none;
 }
 .we-offer .container .we-offer-right {
@@ -1371,6 +1382,7 @@ header .container .call-back-wrapper button {
   font-family: "Muller Extra Bold";
   font-size: 18px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .our-serv .container .our-serv-right-left ul li {
   margin-left: 10px;
@@ -1490,6 +1502,29 @@ header .container .call-back-wrapper button {
   .we-offer .container .we-offer-left {
     margin-bottom: 30px;
     margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .we-offer .container .we-offer-left .h3 {
+    width: auto !important;
+  }
+  .we-offer .container .we-offer-left p.offer-text {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 700px;
+  }
+  .we-offer .container .we-offer-left img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .we-offer .container .we-offer-left form {
+    margin: 0 auto;
+  }
+  .we-offer .container .we-offer-left .hr-hl {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .services .container .services-item-visible {

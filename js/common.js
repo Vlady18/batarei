@@ -65,7 +65,7 @@ $(function(){
 
     new WOW().init();
 
-    $('.services-item').click(function() {
+    $('.services-item').hover(function() {
         const visiblePart = this.children[0];
         const hiddenPart = this.children[1];
 
