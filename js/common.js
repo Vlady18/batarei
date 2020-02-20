@@ -6,7 +6,7 @@ $(function(){
         prevArrow: $('#prevFir'),
         nextArrow: $('#nextFir'),
     });
-    $('.wrapper-slider-pr').slick({
+    $('.our-serv-right').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
