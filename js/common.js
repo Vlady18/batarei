@@ -61,16 +61,28 @@ $(function(){
         $('.acard_ul li').removeClass('active');
         $(this).addClass('active');
     });
-});
-
+    $('.call-back-wrapper button').click(function(){
+        $('#popup').toggleClass('dpn');
+    });
+    $('.close_popup').click(function(){
+       $(this).closest('#popup').addClass('dpn');
+    });
     new WOW().init();
 
     $('.services-item').click(function() {
-        const visiblePart = this.children[0];
-        const hiddenPart = this.children[1];
-
-        $(hiddenPart).toggleClass('dpn');
+    // $('.services-item').removeClass('sim');
+    // $('.services-item .services-item-hidden').addClass('dpn');
+        $(this).siblings('.services-item').removeClass('sim');
+        $(this).siblings('.services-item').find('.services-item-hidden').addClass('dpn');
+        $(this).find('.services-item-hidden ').toggleClass('dpn');
         $(this).toggleClass('sim');
+
+        //
+        // const visiblePart = this.children[0];
+        // const hiddenPart = this.children[1];
+        //
+        // $(hiddenPart).toggleClass('dpn');
+        // $(this).toggleClass('sim');
 
     });
 
@@ -86,3 +98,5 @@ $(function(){
         $('body').toggleClass('bdovhidden');
         $('#side-menu').toggleClass('dpn');
     });
+});
+
