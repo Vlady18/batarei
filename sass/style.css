@@ -14,12 +14,66 @@
   font-family: "Muller Bold";
   src: url("../fonts/MullerBold.eot") format("eot"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype");
 }
+.services .container .services-item-hidden::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #b4d0b8;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
 .bdovhidden {
   overflow: hidden;
 }
 
 .brn {
   border-right: none !important;
+}
+
+#popup {
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+#popup .close_popup {
+  cursor: pointer;
+  font-family: "Muller Extra Bold";
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#popup .h4 {
+  font-family: "Muller Extra Bold";
+  font-size: 22px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#popup input {
+  display: block;
+  width: 100%;
+  color: #7e8284;
+  font-family: "Muller Regular";
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.99px;
 }
 
 #side-menu {
@@ -320,7 +374,7 @@ body, p {
   font-size: 36px;
   color: #3a6f88;
   text-transform: uppercase;
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 }
 .mihail .container .text span {
   display: block;
@@ -911,6 +965,7 @@ header .container .logo-wrapper {
 }
 header .container .logo-wrapper .menu-button {
   margin-right: 15px;
+  cursor: pointer;
 }
 header .container .logo-wrapper .menu-button span {
   display: block;
@@ -1018,6 +1073,9 @@ header .container .call-back-wrapper button {
   align-items: center;
   min-height: 100px;
 }
+.services .container .services-item-visible:last-child {
+  border-right: none !important;
+}
 .services .container .services-item-visible-name {
   display: flex;
 }
@@ -1053,7 +1111,7 @@ header .container .call-back-wrapper button {
 }
 .sec-menu .container .sec-menu-wrapper ul li {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 50px;
 }
 .sec-menu .container .sec-menu-wrapper ul li a {
   text-decoration: none;
@@ -1373,6 +1431,9 @@ header .container .call-back-wrapper button {
   width: calc(100% - 250px);
   display: flex;
 }
+.our-serv .container .our-serv-right .wrapper-slider-pr .item {
+  display: flex;
+}
 .our-serv .container .our-serv-right-left {
   background: rgba(220, 220, 220, 0.66);
   width: 551px;
@@ -1483,21 +1544,25 @@ header .container .call-back-wrapper button {
 
   .sec-menu .container .sec-menu-wrapper ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0px 10px;
     width: 100%;
   }
   .sec-menu .container .sec-menu-wrapper ul li {
-    margin-right: 0;
-  }
-  .sec-menu .container .sec-menu-wrapper form input {
-    width: 160px;
+    margin-right: 20px;
   }
 }
 @media all and (max-width: 1280px) {
+  .we-offer .container .we-offer-left p.h3 {
+    width: 100%;
+  }
+
+  .we-offer .container .we-offer-left p.offer-text {
+    width: 100%;
+  }
+
   .we-offer .container {
     flex-direction: column;
-    align-items: center;
   }
   .we-offer .container .we-offer-left {
     margin-bottom: 30px;
@@ -1622,11 +1687,27 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 1060px) {
+  .sec-menu .container .sec-menu-wrapper {
+    padding: 15px 15px;
+  }
+
   .services .container .services-item-visible-name p {
     font-size: 12px;
   }
 }
 @media all and (max-width: 992px) {
+  .sec-menu .container .sec-menu-wrapper form input {
+    width: 250px;
+  }
+
+  .sec-menu .container .sec-menu-wrapper {
+    justify-content: flex-end;
+  }
+
+  .sec-menu .container .sec-menu-wrapper ul {
+    display: none;
+  }
+
   #district .district_bg .offer_dist {
     flex-direction: column;
     align-items: center;
@@ -1712,11 +1793,10 @@ header .container .call-back-wrapper button {
   }
 
   .services .container {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
   .services .container .services-item {
-    width: 300px;
+    width: 50%;
   }
   .services .container .services-item-visible {
     border-right: none;
@@ -1737,7 +1817,7 @@ header .container .call-back-wrapper button {
   }
 
   .sec-menu .container .sec-menu-wrapper {
-    flex-direction: column;
+    justify-content: flex-end;
   }
   .sec-menu .container .sec-menu-wrapper ul {
     margin-bottom: 15px;
@@ -1752,6 +1832,10 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 768px) {
+  .sec-menu .container .sec-menu-wrapper ul {
+    display: none;
+  }
+
   #district .acard_ul {
     flex-wrap: wrap;
   }
@@ -1815,11 +1899,11 @@ header .container .call-back-wrapper button {
     margin-bottom: 15px;
   }
 
-  #whyWe .advantages_wrap .advantages_item .adv_img {
+  #whyWe .advantages_wrap .advantages_item .better_img {
     min-width: 62px;
   }
 
-  #whyWe .advantages_wrap .advantages_item .adv_img img {
+  #whyWe .advantages_wrap .advantages_item .better_img img {
     max-width: none;
   }
 
@@ -1874,6 +1958,26 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 576px) {
+  .our-serv .container .our-serv-left p {
+    font-size: 34px;
+  }
+
+  .who-we .container .who-we-right p {
+    font-size: 34px;
+  }
+
+  .we-offer .container .we-offer-left p.h3 {
+    font-size: 34px;
+  }
+
+  .services .container {
+    flex-wrap: wrap;
+  }
+
+  .services .container .services-item {
+    width: 100%;
+  }
+
   #district .district_bg .offer_dist .list_distr .distr_ban p strong {
     font-size: 25px;
   }
@@ -1986,7 +2090,7 @@ header .container .call-back-wrapper button {
   }
 
   .we-offer .container .we-offer-left p.h3 {
-    font-size: 40px;
+    font-size: 34px;
   }
 
   .we-offer .container .we-offer-left img {
@@ -2004,7 +2108,22 @@ header .container .call-back-wrapper button {
   }
 
   header .container .logo-wrapper .logo {
-    display: none;
+    width: 120px;
+    margin-top: 5px;
+  }
+
+  header .container .logo-wrapper .menu-button {
+    margin-right: 9px;
+  }
+
+  header .container .logo-wrapper .menu-button span {
+    width: 22px;
+    margin-bottom: 5px;
+  }
+
+  header .container .call-back-wrapper button {
+    font-size: 11px;
+    width: 130px;
   }
 
   .actions-slider .container .actions-slider-wrapper .actions-slider-item-content {
@@ -2014,6 +2133,14 @@ header .container .call-back-wrapper button {
     font-size: 25px;
     line-height: inherit;
     width: auto;
+  }
+}
+@media all and (min-width: 1060px) {
+  .sec-menu .container .sec-menu-wrapper form input {
+    transition: all 0.3s ease;
+  }
+  .sec-menu .container .sec-menu-wrapper form input:focus {
+    width: 270px;
   }
 }
 

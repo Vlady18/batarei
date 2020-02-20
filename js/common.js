@@ -6,12 +6,10 @@ $(function(){
         prevArrow: $('#prevFir'),
         nextArrow: $('#nextFir'),
     });
-    $('#sliderwrapper').slick({
+    $('.wrapper-slider-pr').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: $('#prevSec'),
-        nextArrow: $('#nextSec'),
     });
     $('.photo_sertificate').slick({
         infinite: true,
@@ -61,17 +59,20 @@ $(function(){
         $('.acard_ul li').removeClass('active');
         $(this).addClass('active');
     });
-});
-
+    $('.call-back-wrapper button').click(function(){
+        $('#popup').toggleClass('dpn');
+    });
+    $('.close_popup').click(function(){
+       $(this).closest('#popup').addClass('dpn');
+    });
     new WOW().init();
 
-    $('.services-item').hover(function() {
+    $('.services-item').click(function() {
         const visiblePart = this.children[0];
         const hiddenPart = this.children[1];
 
         $(hiddenPart).toggleClass('dpn');
         $(this).toggleClass('sim');
-
     });
 
     $('.menu-button').click(function() {
@@ -86,3 +87,4 @@ $(function(){
         $('body').toggleClass('bdovhidden');
         $('#side-menu').toggleClass('dpn');
     });
+});

@@ -11,10 +11,62 @@
   font-family: 'Muller Bold'
   src: url('../fonts/MullerBold.eot') format('eot'), url('../fonts/MullerBold.woff') format('woff'), url('../fonts/MullerBold.ttf') format('truetype')
 
+.services .container .services-item-hidden
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    //background-color: rgba(71, 82, 72, 1)
+    background-color: #b4d0b8
+    position: absolute
+    top: 11px
+    left: 0
 .bdovhidden
   overflow: hidden
 .brn
   border-right: none!important
+#popup
+  background: #fff
+  width: 90%
+  max-width: 500px
+  margin: 0 auto
+  padding: 30px 40px
+  position: fixed
+  z-index: 100
+  top: 50%
+  left: 0
+  right: 0
+  margin: 0 auto
+  //left: 50%
+  border: 2px solid #000
+  //transform: translate(-50%, -50%)
+  .close_popup
+    cursor: pointer
+    font-family: "Muller Extra Bold"
+    font-size: 22px
+    position: absolute
+    right: 10px
+    top: 10px
+  .h4
+    font-family: "Muller Extra Bold"
+    font-size: 22px
+    text-align: center
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 15px
+  input
+    display: block
+    width: 100%
+    color: #7e8284
+    font-family: "Muller Regular"
+    padding: 5px 15px
+    margin-bottom: 15px
+    padding: 15px
+    font-size: 14px
+    font-weight: 400
+    line-height: 12.99px
+  //display: none
 #side-menu
   top: 0
   position: fixed
@@ -260,7 +312,7 @@ body, p
         font-size: 36px
         color: #3a6f88
         text-transform: uppercase
-        margin-bottom: 37px
+        margin-bottom: 33px
       span
         display: block
         color: #3a6f88
@@ -761,15 +813,16 @@ header
       display: flex
       align-items: center
       .menu-button
-          margin-right: 15px
-          span
-            display: block
-            width: 44px
-            height: 2px
-            background-color: #202124
-            margin-bottom: 10px
-            &:last-child
-              margin-bottom: 0
+        margin-right: 15px
+        cursor: pointer
+        span
+          display: block
+          width: 44px
+          height: 2px
+          background-color: #202124
+          margin-bottom: 10px
+          &:last-child
+            margin-bottom: 0
       .logo
         height: 56px
     .info-wrapper
@@ -856,6 +909,8 @@ header
         justify-content: space-between
         align-items: center
         min-height: 100px
+        &:last-child
+          border-right: none!important
         &-name
           display: flex
           p
@@ -886,7 +941,7 @@ header
       ul
         li
           display: inline-block
-          margin-right: 60px
+          margin-right: 50px
           a
             text-decoration: none
             color: #ffffff
@@ -905,6 +960,7 @@ header
           font-weight: 400
           line-height: 12.99px
           outline: none
+
         img
           position: absolute
           right: 5px
@@ -1152,6 +1208,9 @@ header
     .our-serv-right
       width: calc(100% - 250px)
       display: flex
+      .wrapper-slider-pr
+        .item
+          display: flex
       &-left
         background: rgba(220, 220, 220, 0.66)
         width: 551px
@@ -1241,18 +1300,22 @@ header
   .sec-menu .container .sec-menu-wrapper
     ul
       display: flex
-      justify-content: space-between
+      justify-content: flex-start
       padding: 0px 10px
       width: 100%
       li
-        margin-right: 0
+        margin-right: 20px
     form
       input
-        width: 160px
+        //width: 160px
 @media all and (max-width: 1280px)
+  .we-offer .container .we-offer-left p.h3
+    width: 100%
+  .we-offer .container .we-offer-left p.offer-text
+    width: 100%
   .we-offer .container
     flex-direction: column
-    align-items: center
+    //align-items: center
     .we-offer-left
       margin-bottom: 30px
       margin-right: 0
@@ -1335,9 +1398,20 @@ header
   header .container .info-wrapper .info-item
     font-size: 12px
 @media all and (max-width: 1060px)
+  .sec-menu .container .sec-menu-wrapper form input
+    //width: 160px
+  .sec-menu .container .sec-menu-wrapper
+    padding: 15px 15px
+
   .services .container .services-item-visible-name p
     font-size: 12px
 @media all and (max-width: 992px)
+  .sec-menu .container .sec-menu-wrapper form input
+    width: 250px
+  .sec-menu .container .sec-menu-wrapper
+    justify-content: flex-end
+  .sec-menu .container .sec-menu-wrapper ul
+    display: none
   #district .district_bg .offer_dist
     flex-direction: column
     align-items: center
@@ -1390,10 +1464,12 @@ header
     &-right
       width: 100%
   .services .container
-    flex-direction: column
-    align-items: center
+    //flex-direction: column
+    //align-items: center
+    flex-wrap: wrap
     .services-item
-      width: 300px
+      width: 50%
+      //width: 300px
       &-visible
         border-right: none
         border-bottom: 1px solid black
@@ -1406,7 +1482,8 @@ header
     &:last-child
       display: none
   .sec-menu .container .sec-menu-wrapper
-    flex-direction: column
+    //flex-direction: column
+    justify-content: flex-end
     ul
       margin-bottom: 15px
     form
@@ -1416,6 +1493,8 @@ header
   .we-offer .container .we-offer-right-item
     width: calc(100% - 20px)
 @media all and (max-width: 768px)
+  .sec-menu .container .sec-menu-wrapper ul
+    display: none
   #district .acard_ul
     flex-wrap: wrap
   #district .acard_ul li
@@ -1452,9 +1531,9 @@ header
     margin-bottom: 10px
   #whyWe .advantages_wrap .advantages_item
     margin-bottom: 15px
-  #whyWe .advantages_wrap .advantages_item .adv_img
+  #whyWe .advantages_wrap .advantages_item .better_img
     min-width: 62px
-  #whyWe .advantages_wrap .advantages_item .adv_img img
+  #whyWe .advantages_wrap .advantages_item .better_img img
     max-width: none
   #whyWe .why_form
     background: #3a6f88
@@ -1488,6 +1567,16 @@ header
   header .container .info-wrapper .info-item
     display: none
 @media all and (max-width: 576px)
+  .our-serv .container .our-serv-left p
+    font-size: 34px
+  .who-we .container .who-we-right p
+    font-size: 34px
+  .we-offer .container .we-offer-left p.h3
+    font-size: 34px
+  .services .container
+    flex-wrap: wrap
+  .services .container .services-item
+    width: 100%
   #district .district_bg .offer_dist .list_distr .distr_ban p strong
     font-size: 25px
   #district .district_bg .offer_dist .list_distr .distr_ban
@@ -1544,6 +1633,14 @@ header
         &::after
           display: none
 @media all and (max-width: 440px)
+  //.services .container .services-item-visible
+  //  padding: 10px 5px
+  //.services .container .services-item-visible-name img
+  //  margin-right: 5px
+  //  width: 24px
+  //  height: 20px
+  //.services .container .services-item-visible-name p
+  //  font-size: 10px
   .lets-start .container .order-list-item .text p
     font-size: 22px
   .lets-start .container .order-list-item .numb
@@ -1551,7 +1648,7 @@ header
   #prevSec
     left: 0
   .we-offer .container .we-offer-left p.h3
-    font-size: 40px
+    font-size: 34px
   .we-offer .container .we-offer-left img
     width: 300px
     margin: 0 auto
@@ -1562,10 +1659,24 @@ header
     input
       width: 300px
   header .container .logo-wrapper .logo
-    display: none
+    width: 120px
+    margin-top: 5px
+  header .container .logo-wrapper .menu-button
+    margin-right: 9px
+  header .container .logo-wrapper .menu-button span
+    width: 22px
+    margin-bottom: 5px
+  header .container .call-back-wrapper button
+    font-size: 11px
+    width: 130px
   .actions-slider .container .actions-slider-wrapper .actions-slider-item-content
     padding: 20px
     p
       font-size: 25px
       line-height: inherit
       width: auto
+@media all and (min-width: 1060px)
+  .sec-menu .container .sec-menu-wrapper form input
+    transition: all .3s ease
+    &:focus
+      width: 270px
