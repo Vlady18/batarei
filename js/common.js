@@ -10,6 +10,8 @@ $(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        prevArrow: $('.our-serv-right-right .fixPrev'),
+        nextArrow: $('.our-serv-right-right .fixNext'),
     });
     $('.photo_sertificate').slick({
         infinite: true,
@@ -67,7 +69,7 @@ $(function(){
     });
     new WOW().init();
 
-    $('.services-item').click(function() {
+    $('.services-item').hover(function() {
         const visiblePart = this.children[0];
         const hiddenPart = this.children[1];
 

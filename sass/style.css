@@ -1964,6 +1964,10 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 576px) {
+  .services .container .services-item-hidden::before {
+    display: none;
+  }
+
   .our-serv .container .our-serv-left p {
     font-size: 34px;
   }
