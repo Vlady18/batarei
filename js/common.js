@@ -10,15 +10,15 @@ $(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: $('.our-serv-right-right .fixPrev'),
-        nextArrow: $('.our-serv-right-right .fixNext'),
+        prevArrow: $('#prevThir'),
+        nextArrow: $('#nextThir'),
     });
     $('.photo_sertificate').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: $('#sertific .prev'),
-        nextArrow: $('#sertific .next'),
+        prevArrow: $('#prevSertif'),
+        nextArrow: $('#nextSertif'),
     });
     $('.work_wrap').slick({
         infinite: true,

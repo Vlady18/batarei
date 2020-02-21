@@ -586,6 +586,10 @@ body, p {
   box-shadow: -1px 20px 16px -17px rgba(0, 0, 0, 0.29);
 }
 
+.wrapp {
+  position: relative;
+}
+
 #sertific {
   background: #d7e0e4;
   padding: 50px 0px 55px 0px;
@@ -593,6 +597,7 @@ body, p {
 #sertific .sertific_wrap {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 #sertific .sertific_wrap .sertific_item.sm {
   max-width: 360px;
@@ -604,25 +609,26 @@ body, p {
   max-width: 290px;
   position: relative;
 }
-#sertific .sertific_wrap .photo_sertificate.sertific_item .photo_srtif {
+#sertific .sertific_wrap .photo_srtif {
   position: relative;
 }
-#sertific .sertific_wrap .photo_sertificate.sertific_item .prev, #sertific .sertific_wrap .photo_sertificate.sertific_item .next {
+#sertific .sertific_wrap .prev, #sertific .sertific_wrap .next {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   width: 50px;
   height: 50px;
   background: #000000;
   text-align: center;
+  z-index: 10;
 }
-#sertific .sertific_wrap .photo_sertificate.sertific_item .next {
-  right: 0px;
+#sertific .sertific_wrap .next {
+  right: 1px;
 }
-#sertific .sertific_wrap .photo_sertificate.sertific_item .prev {
+#sertific .sertific_wrap .prev {
   right: 50px;
 }
 #sertific .sertific_wrap .sertific_item {
@@ -1410,6 +1416,31 @@ header .container .call-back-wrapper button {
 }
 .our-serv .container {
   display: flex;
+  position: relative;
+}
+.our-serv .container .prev, .our-serv .container .next {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(100% - 50px);
+  width: 50px;
+  height: 50px;
+  background: #000000;
+  text-align: center;
+  z-index: 23;
+}
+.our-serv .container .prev img, .our-serv .container .next img {
+  width: 16px;
+  height: 27px;
+  margin: 0 auto;
+}
+.our-serv .container .next {
+  left: calc(100% - 50px);
+}
+.our-serv .container .prev {
+  right: 50px;
 }
 .our-serv .container .our-serv-left {
   float: left;
@@ -1968,6 +1999,10 @@ header .container .call-back-wrapper button {
   }
 }
 @media all and (max-width: 576px) {
+  .our-serv .container .prev {
+    left: 0;
+  }
+
   .services .container .services-item-hidden::before {
     display: none;
   }
