@@ -474,6 +474,12 @@ body, p {
   background: #c2d6e0;
   padding: 20px 0px 25px 0px;
 }
+#district .district_bg .change_dist {
+  display: none;
+}
+#district .district_bg .change_dist.active {
+  display: block !important;
+}
 #district .district_bg .offer_dist {
   display: flex;
   justify-content: space-between;

@@ -59,8 +59,12 @@ $(function(){
     });
     $('.acard_ul li').on('click', function(){
         $('.acard_ul li').removeClass('active');
+        $('.change_dist').removeClass('active');
         $(this).addClass('active');
+        var current = $(this).data('id');
+        $(".district_bg").find("[data-id='" + current + "']").addClass('active');
     });
+
     $('.call-back-wrapper button').click(function(){
         $('#popup').toggleClass('dpn');
     });
